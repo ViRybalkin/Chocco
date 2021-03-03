@@ -1,0 +1,21 @@
+@mixin btn{
+  display: inline-block;
+  padding: 18px 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 100px;
+}
+  .btn{
+    @include btn;
+    &_color-white{
+      background-color: $white;
+      color: $darkgreen;
+      transition: .4s;
+      &:hover{
+        color: $white;
+        background:darkgreen;
+      }
+    }
+  }
+
+

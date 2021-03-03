@@ -1,0 +1,16 @@
+.fixed-menu{
+  position: absolute;
+  top: 23%;
+  right: 23.5%;
+  &__item{
+    margin-bottom: 15px;
+    .fixed-menu__link{
+      display: block;
+      background: $white;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
+  }
+}
+

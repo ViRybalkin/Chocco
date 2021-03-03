@@ -1,0 +1,39 @@
+.features{
+    margin-left: 50px;
+    padding-bottom: 50px;
+    &__list{
+      display: flex;
+    }
+    &__item{
+      margin-right: 103px;
+      width: 8%;
+      position: relative;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    &__text{
+      p{
+        font-size: 14px;
+      }
+    }
+}
+
+@mixin icon{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 41px;
+  height: 41px;
+  top: 0;
+  left: -53px;
+}
+
+@each $icon in (leaf,car,ruler){
+    .features__item_icon-#{$icon}::before{
+      background: url(../../img/icons/#{$icon}.png) center center no-repeat;
+      @include icon;
+      
+    }
+}
+
