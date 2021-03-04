@@ -528,19 +528,36 @@ template {
 }
 
 .fixed-menu {
-  position: absolute;
+  position: fixed;
   top: 23%;
-  right: 23.5%;
+  right: 3%;
+  z-index: 100;
 }
 .fixed-menu__item {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
-.fixed-menu__item .fixed-menu__link {
+.fixed-menu__item-active .fixed-menu__link {
+  border-color: #ffffff;
+}
+.fixed-menu__link {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid transparent;
   display: block;
-  background: #ffffff;
+  position: relative;
+}
+.fixed-menu__link::before {
+  content: "";
+  display: block;
   width: 6px;
   height: 6px;
   border-radius: 50%;
+  background: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .icon__img-leaf1 {
