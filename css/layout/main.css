@@ -45,6 +45,12 @@ h1 {
   text-transform: uppercase;
 }
 
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .wrapper {
   margin: 0 auto;
   overflow: hidden;
@@ -560,57 +566,102 @@ template {
   transform: translate(-50%, -50%);
 }
 
-.icon__img-leaf1 {
-  background: url(../../img/icons/leaf1.png) center center no-repeat;
-  max-width: 100%;
-  max-height: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0;
-  bottom: 0;
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  color: #666666;
+  height: 100vh;
+  min-height: 650px;
 }
 
-.icon__img-leaf2 {
-  background: url(../../img/icons/leaf2.png) center center no-repeat;
-  max-width: 100%;
-  max-height: 100%;
+.section__headline {
+  background: url(../../img/icons/узор-лист1.png) left center no-repeat;
+  position: relative;
+}
+.section__headline:after {
+  content: url(../../img/icons/малина1.png);
   position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0;
-  bottom: 0;
+  bottom: -7px;
+  left: 0;
 }
 
-.icon__img-leaf3 {
-  background: url(../../img/icons/leaf3.png) center center no-repeat;
-  max-width: 100%;
-  max-height: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0;
-  bottom: 0;
+.section__title {
+  margin-bottom: 30px;
 }
 
-.icon__img-berry1 {
-  background: url(../../img/icons/berry1.png) center center no-repeat;
-  max-width: 100%;
-  max-height: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0;
-  bottom: 0;
+.headline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.icon__img-berry2 {
-  background: url(../../img/icons/berry2.png) center center no-repeat;
-  max-width: 100%;
-  max-height: 100%;
+.headline__title {
+  color: #292929;
+  margin-bottom: 19px;
+}
+
+.headline__subtitle {
+  padding: 0 26%;
+}
+
+.benefits__list {
+  display: flex;
+}
+
+.benefits__item {
+  flex: 1;
+  padding: 0 3%;
+  position: relative;
+}
+.benefits__item::before {
+  content: url(../../img/icons/circles.png);
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 60px;
   right: 0;
-  bottom: 0;
+  transform: translateX(50%);
+}
+.benefits__item:first-child {
+  padding-left: 0;
+}
+.benefits__item:last-child {
+  padding-right: 0;
+}
+.benefits__item:last-child::before {
+  display: none;
+}
+
+.benefit {
+  text-align: center;
+}
+.benefit__img-wrapper {
+  display: flex;
+  align-items: center;
+  display: inline-block;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  background: #F2F5F4;
+  position: relative;
+  margin-bottom: 14px;
+}
+.benefit__icon {
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.benefit__title {
+  font-size: 24px;
+  color: #292929;
+  margin-bottom: 16px;
+}
+.benefit__desc p {
+  font-size: 16px;
 }

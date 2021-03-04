@@ -1,0 +1,24 @@
+.section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  color:#666666;
+  height: 100vh;
+  min-height: 650px;
+}
+
+.section__headline{
+  background: url(../../img/icons/узор-лист1.png) left center no-repeat;
+  position: relative;
+  &:after{
+    content: url(../../img/icons/малина1.png);
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    }
+}
+
+.section__title{
+  margin-bottom: 30px;
+}
