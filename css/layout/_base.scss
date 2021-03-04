@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 html,body{
   height: 100%;
 }
@@ -10,7 +14,6 @@ body{
   -moz-osx-font-smoothing:grayscale;
   overflow-x: hidden;
   color: black;
-
 }
 
 p{
@@ -46,7 +49,6 @@ $black:#292929;
 $green:#497870;
 
 .wrapper{
-  max-width: 1100px;
   margin: 0 auto;
   overflow: hidden;
   min-height: 100%;
@@ -63,10 +65,7 @@ $green:#497870;
   margin: 0 auto;
 }
 
-.section-hero{
-  background:#61C4D9;
-  color: $white;
-  background-image: url(/img/bg/Батончики.png),url(/img/bg/узор1.png);
-  background-position: bottom 58% right 4%, bottom right 0;
-  background-repeat: no-repeat;
+
+.section-about{
+  height: 600px;
 }

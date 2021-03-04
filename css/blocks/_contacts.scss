@@ -1,17 +1,10 @@
 .contacts{
-  position: relative;
   &__link{
     font-size: 22px;
-    &::before{
-      content: "";
-      display: block;
-      position: absolute;
-      top: 9px;
-      left: -17px;
-      background: url(../../img/icons/phone.png);
-      width: 14px;
-      height: 14px;
+    }
+    &__icon{
+      width: 12px;
+      height: 12px;
+      margin-right: 6px;
     }
   }
-  
-}

@@ -1,0 +1,30 @@
+.section-hero{
+  color: $white;
+  background: url(../../img/bg/узор1.png) right bottom no-repeat;
+  background-color:#61C4D9;
+  height: 100vh;
+  min-height: 650px;
+  position: relative;
+  &:before{
+    position: absolute;
+    content: url(../../img/icons/Лист.png);
+    bottom: -40px;
+    left: 2%;
+  }
+  &::after{
+    position: absolute;
+    content: url(../../img/icons/comp.png);
+    bottom: -40px;
+    right: 0;
+  }
+}
+
+.hero__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background: url(../../img/bg/Батончики.png) right center / 50% auto no-repeat;
+  padding: 20px 0 50px;
+}
+  
