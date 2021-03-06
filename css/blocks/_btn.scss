@@ -4,6 +4,7 @@
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 100px;
+  font-size: 16px
 }
   .btn{
     @include btn;
@@ -16,6 +17,27 @@
         background:$darkgreen;
       }
     }
+    &_color-green{
+      background: $darkgreen;
+      color: $white;
+      transition: 0.4s;
+      &:hover{
+        background: $white;
+        color: $darkgreen;
+      }
+    }
+    &_color-transparent{
+      background: transparent;
+      color: green;
+      transition: 0.4s;
+      font-weight: normal;
+      font-size: 14px;
+      &:hover{
+        color: $white;
+      }
+    }
   }
+
+
 
 

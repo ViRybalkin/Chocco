@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   flex: 1;
   color:#666666;
   height: 100vh;
@@ -28,19 +27,36 @@
 
 .section-reviews{
   position: relative;
+  background: url(../../img/icons/review-berry2.png) right top no-repeat;
   &::before{
-    content: url(../../img/icons/review-berry.png);
-    background: url(../../img/icons/review-bg1.png)right bottom no-repeat;
+    content: "";
+    background:url(../../img/icons/review-bg1.png)right bottom no-repeat;
     width: 100px;
     height: 320px;
     position: absolute;
-    bottom: -50px;
+    bottom: -156px;
     left: 0;
   }
   &::after{
-    content: url(../../img/icons/review-berry2.png);
+    content: "";
+    background:url(../../img/icons/review-berry.png) right bottom no-repeat;
+    width: 136px;
+    height: 192px;
     position: absolute;
-    top: 0;
-    right: 0;
+    bottom: -72px;
+    left: 0;
   }
 }
+
+.section-form{
+  background: 
+  url(../../img/icons/berry-form.png) left 5% bottom 10% no-repeat,
+  url(../../img/icons/laef-form.png) right 5% bottom 10% no-repeat,
+  url(../../img/bg/form-bg.png);
+  color: $darkgreen;
+  .section__title{
+    color: $darkgreen;
+    margin-bottom: 60px;
+  }
+}
+

@@ -1,0 +1,43 @@
+.form{
+  display: flex;
+  &__col{
+    flex: 1;
+    margin-right: 26px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__row{
+    display: flex;
+    margin-bottom: 14px;
+  }
+  &__block{
+    flex: 1;
+    margin-right: 16px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__input{
+    width: 100%;
+    height: 58px;
+    border-radius: 4px;
+    padding-left: 12px;
+    border: none;
+    &:focus{
+      border: 3px solid #DEE2BD;;
+    }
+  }
+  &__textarea{
+    width: 450px;
+    height: 152px;
+  }
+  &__controls{
+    margin-top: 36px;
+    margin-bottom: 48px;
+    .form__row{
+      margin-bottom: 20px;
+    }
+  }
+}
+

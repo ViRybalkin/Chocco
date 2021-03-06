@@ -55,6 +55,17 @@ h3{
   font-weight: bold;
 }
 
+input,button,textarea{
+  outline: none;
+  border: none;
+}
+
+input[type="submit"],
+input[type="reset"]{
+  cursor: pointer;
+}
+
+
 
 $white:#ffffff;
 $black:#292929;
