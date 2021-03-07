@@ -83,8 +83,13 @@ input[type=reset] {
   margin: 0 auto;
 }
 
-.section-about {
-  height: 600px;
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background: url(../../img/bg/Батончики.png) right center/50% auto no-repeat;
+  padding: 20px 0 50px;
 }
 
 /* Document
@@ -466,36 +471,6 @@ template {
   margin-right: 6px;
 }
 
-.section-hero {
-  color: #ffffff;
-  background: url(../../img/bg/узор1.png) right bottom no-repeat;
-  background-color: #61C4D9;
-  height: 100vh;
-  min-height: 650px;
-  position: relative;
-}
-.section-hero:before {
-  position: absolute;
-  content: url(../../img/icons/Лист.png);
-  bottom: -40px;
-  left: 2%;
-}
-.section-hero::after {
-  position: absolute;
-  content: url(../../img/icons/comp.png);
-  bottom: -40px;
-  right: 0;
-}
-
-.hero__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  background: url(../../img/bg/Батончики.png) right center/50% auto no-repeat;
-  padding: 20px 0 50px;
-}
-
 .hero {
   max-width: 46%;
 }
@@ -660,6 +635,25 @@ template {
   margin-bottom: 60px;
 }
 
+.section-hero {
+  color: #ffffff;
+  background: url(../../img/bg/узор1.png) right bottom no-repeat;
+  background-color: #61C4D9;
+  position: relative;
+}
+.section-hero:before {
+  position: absolute;
+  content: url(../../img/icons/Лист.png);
+  bottom: -40px;
+  left: 2%;
+}
+.section-hero::after {
+  position: absolute;
+  content: url(../../img/icons/comp.png);
+  bottom: -40px;
+  right: 0;
+}
+
 .headline {
   display: flex;
   align-items: center;
@@ -800,8 +794,12 @@ template {
   position: relative;
   overflow: hidden;
   border: 4px solid transparent;
+  transition: 0.4s;
 }
 .interactive__avatar--active {
+  border-color: #365A49;
+}
+.interactive__avatar:hover {
   border-color: #365A49;
 }
 

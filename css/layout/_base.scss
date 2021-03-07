@@ -62,7 +62,7 @@ input,button,textarea{
 
 input[type="submit"],
 input[type="reset"]{
-  cursor: pointer;
+cursor: pointer;
 }
 
 
@@ -91,7 +91,11 @@ $z-fixed-menu:100;
   margin: 0 auto;
 }
 
-
-.section-about{
-  height: 600px;
+.hero__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background: url(../../img/bg/Батончики.png) right center / 50% auto no-repeat;
+  padding: 20px 0 50px;
 }
