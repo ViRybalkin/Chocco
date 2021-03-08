@@ -5,7 +5,7 @@
   flex: 1;
   color:#666666;
   height: 100vh;
-  min-height: 650px;
+  min-height: 40.625rem;
 }
 
 .section__headline{
@@ -14,14 +14,14 @@
   &:after{
     content: url(../../img/icons/малина1.png);
     position: absolute;
-    bottom: -7px;
+    bottom: -0.5rem;
     left: 0;
     }
 }
 
 .section__title{
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   color: $black;
 }
 
@@ -31,19 +31,19 @@
   &::before{
     content: "";
     background:url(../../img/icons/review-bg1.png)right bottom no-repeat;
-    width: 100px;
-    height: 320px;
+    width: 6.25rem;
+    height: 20rem;
     position: absolute;
-    bottom: -156px;
+    bottom: -9.75rem;
     left: 0;
   }
   &::after{
     content: "";
     background:url(../../img/icons/review-berry.png) right bottom no-repeat;
-    width: 136px;
-    height: 192px;
+    width: 8.5rem;
+    height: 12rem;
     position: absolute;
-    bottom: -72px;
+    bottom: -4.5rem;
     left: 0;
   }
 }
@@ -68,13 +68,13 @@
   &:before{
     position: absolute;
     content: url(../../img/icons/Лист.png);
-    bottom: -40px;
+    bottom: -2.5rem;
     left: 2%;
   }
   &::after{
     position: absolute;
     content: url(../../img/icons/comp.png);
-    bottom: -40px;
+    bottom: -2.5rem;
     right: 0;
   }
 }

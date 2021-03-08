@@ -1,17 +1,17 @@
 .review__wrapper{
   background: #F8FAF9 url(../../img/bg/review-bg.png) right top 13% no-repeat;
-  padding: 42px 36px;
+  padding: 2.625rem 2.25rem;
   position: relative;
   overflow: hidden;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
   &::after{
     content: "";
-    width: 82px;
-    height: 82px;
+    width: 5.125rem;
+    height: 5.125rem;
     border-radius: 50%;
     background: $white;
     position: absolute;
-    top: -60px;
+    top: -3.75rem;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -20,9 +20,9 @@
 .review{
   display: flex;
   &__avatar{
-    width: 254px;
-    height: 264px;
-    margin-right: 40px;
+    width: 15.875rem;
+    height: 16.5rem;
+    margin-right: 2.5rem;
   }
   &__img{
     object-fit: cover;
@@ -31,21 +31,18 @@
   }
   &__text{
     flex: 1;
-    padding: 24px 0;
-    max-width: 436px;
+    padding: 1.5rem 0;
+    max-width: 27.25rem;
   }
   &__title{
     color: $black;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
   }
   &__desc{
-    margin-bottom: 26px;
-    p{
-      font-size: 16px;
-    }
+    margin-bottom: 1.625rem;
+
   }
   &__author{
-    font-size: 16px;
     font-weight: bold;
     color: $black;
   }

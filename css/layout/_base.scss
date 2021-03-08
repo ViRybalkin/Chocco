@@ -16,6 +16,10 @@ body{
   color: black;
 }
 
+img{
+  max-width: 100%;
+}
+
 p{
   margin: 0;
 }
@@ -39,19 +43,19 @@ h1,h2,h3,h4,h5,h6{
 }
 
 h1{
-  font-size: 42px;
+  font-size: 2.625rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 h2{
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 h3{
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -67,16 +71,10 @@ cursor: pointer;
 
 
 
-$white:#ffffff;
-$black:#292929;
-$green:#497870;
-$darkgreen:#2E4E3F;
-
-$z-fixed-menu:100;
-
 .wrapper{
   margin: 0 auto;
   overflow: hidden;
+  min-width:$containerWidth + 1.875rem;
   min-height: 100%;
   display: flex;
   flex-direction:column;
@@ -87,7 +85,7 @@ $z-fixed-menu:100;
 }
 
 .container{
-  width: 930px;
+  width:$containerWidth;
   margin: 0 auto;
 }
 
@@ -97,5 +95,5 @@ $z-fixed-menu:100;
   justify-content: space-between;
   height: 100%;
   background: url(../../img/bg/Батончики.png) right center / 50% auto no-repeat;
-  padding: 20px 0 50px;
+  padding: 1.25rem 0 3.125rem;
 }

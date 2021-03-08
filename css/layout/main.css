@@ -17,6 +17,10 @@ body {
   color: black;
 }
 
+img {
+  max-width: 100%;
+}
+
 p {
   margin: 0;
 }
@@ -40,19 +44,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 2.625rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -69,6 +73,7 @@ input[type=reset] {
 .wrapper {
   margin: 0 auto;
   overflow: hidden;
+  min-width: 60rem;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -79,7 +84,7 @@ input[type=reset] {
 }
 
 .container {
-  width: 930px;
+  width: 58.125rem;
   margin: 0 auto;
 }
 
@@ -89,7 +94,7 @@ input[type=reset] {
   justify-content: space-between;
   height: 100%;
   background: url(../../img/bg/Батончики.png) right center/50% auto no-repeat;
-  padding: 20px 0 50px;
+  padding: 1.25rem 0 3.125rem;
 }
 
 /* Document
@@ -456,40 +461,39 @@ template {
   justify-content: space-between;
 }
 .menu__item {
-  margin-right: 27px;
+  margin-right: 1.75rem;
 }
 .menu__item:last-child {
   margin-right: 0;
 }
 
 .contacts__link {
-  font-size: 22px;
+  font-size: 1.375;
 }
 .contacts__icon {
-  width: 12px;
-  height: 12px;
-  margin-right: 6px;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-right: 0.375rem;
 }
 
 .hero {
   max-width: 46%;
 }
 .hero__title {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .hero__subtitle {
-  margin-bottom: 28px;
-  font-size: 18px;
+  margin-bottom: 1.175rem;
+  font-size: 1.125rem;
   padding-right: 15%;
 }
 
 .btn {
   display: inline-block;
-  padding: 18px 35px;
+  padding: 1.125rem 2.25rem;
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 100px;
-  font-size: 16px;
 }
 .btn_color-white {
   background-color: #ffffff;
@@ -514,7 +518,7 @@ template {
   color: green;
   transition: 0.4s;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .btn_color-transparent:hover {
   color: #ffffff;
@@ -524,7 +528,7 @@ template {
   display: flex;
 }
 .features__item {
-  margin-right: 47px;
+  margin-right: 2.875rem;
 }
 .features__item:last-child {
   margin-right: 0;
@@ -534,13 +538,13 @@ template {
   display: flex;
 }
 .feature__icon {
-  width: 45px;
-  height: 45px;
-  margin-right: 5px;
+  width: 2.875rem;
+  height: 2.875rem;
+  margin-right: 0.375rem;
 }
 .feature__text {
-  max-width: 76px;
-  font-size: 14px;
+  max-width: 4.75rem;
+  font-size: 0.875rem;
 }
 
 .fixed-menu {
@@ -550,14 +554,14 @@ template {
   z-index: 100;
 }
 .fixed-menu__item {
-  margin-bottom: 5px;
+  margin-bottom: 0.375rem;
 }
 .fixed-menu__item-active .fixed-menu__link {
   border-color: #ffffff;
 }
 .fixed-menu__link {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
   border: 1px solid transparent;
   display: block;
@@ -566,8 +570,8 @@ template {
 .fixed-menu__link::before {
   content: "";
   display: block;
-  width: 6px;
-  height: 6px;
+  width: 0.375rem;
+  height: 0.375rem;
   border-radius: 50%;
   background: #ffffff;
   position: absolute;
@@ -583,7 +587,7 @@ template {
   flex: 1;
   color: #666666;
   height: 100vh;
-  min-height: 650px;
+  min-height: 40.625rem;
 }
 
 .section__headline {
@@ -593,13 +597,13 @@ template {
 .section__headline:after {
   content: url(../../img/icons/малина1.png);
   position: absolute;
-  bottom: -7px;
+  bottom: -0.5rem;
   left: 0;
 }
 
 .section__title {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   color: #292929;
 }
 
@@ -610,19 +614,19 @@ template {
 .section-reviews::before {
   content: "";
   background: url(../../img/icons/review-bg1.png) right bottom no-repeat;
-  width: 100px;
-  height: 320px;
+  width: 6.25rem;
+  height: 20rem;
   position: absolute;
-  bottom: -156px;
+  bottom: -9.75rem;
   left: 0;
 }
 .section-reviews::after {
   content: "";
   background: url(../../img/icons/review-berry.png) right bottom no-repeat;
-  width: 136px;
-  height: 192px;
+  width: 8.5rem;
+  height: 12rem;
   position: absolute;
-  bottom: -72px;
+  bottom: -4.5rem;
   left: 0;
 }
 
@@ -644,13 +648,13 @@ template {
 .section-hero:before {
   position: absolute;
   content: url(../../img/icons/Лист.png);
-  bottom: -40px;
+  bottom: -2.5rem;
   left: 2%;
 }
 .section-hero::after {
   position: absolute;
   content: url(../../img/icons/comp.png);
-  bottom: -40px;
+  bottom: -2.5rem;
   right: 0;
 }
 
@@ -660,11 +664,11 @@ template {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 .headline__title {
-  margin-bottom: 19px;
+  margin-bottom: 1.25rem;
 }
 
 .headline__subtitle {
@@ -683,7 +687,7 @@ template {
 .benefits__item::before {
   content: url(../../img/icons/circles.png);
   position: absolute;
-  top: 60px;
+  top: 3.75rem;
   right: 0;
   transform: translateX(50%);
 }
@@ -704,45 +708,42 @@ template {
   display: flex;
   align-items: center;
   display: inline-block;
-  width: 128px;
-  height: 128px;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
   background: #F2F5F4;
   position: relative;
-  margin-bottom: 14px;
+  margin-bottom: 0.875rem;
 }
 .benefit__icon {
-  width: 68px;
-  height: 68px;
+  width: 4.25rem;
+  height: 4.25rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .benefit__title {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #292929;
-  margin-bottom: 16px;
-}
-.benefit__desc p {
-  font-size: 16px;
+  margin-bottom: 1rem;
 }
 
 .review__wrapper {
   background: #F8FAF9 url(../../img/bg/review-bg.png) right top 13% no-repeat;
-  padding: 42px 36px;
+  padding: 2.625rem 2.25rem;
   position: relative;
   overflow: hidden;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 .review__wrapper::after {
   content: "";
-  width: 82px;
-  height: 82px;
+  width: 5.125rem;
+  height: 5.125rem;
   border-radius: 50%;
   background: #ffffff;
   position: absolute;
-  top: -60px;
+  top: -3.75rem;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -751,9 +752,9 @@ template {
   display: flex;
 }
 .review__avatar {
-  width: 254px;
-  height: 264px;
-  margin-right: 40px;
+  width: 15.875rem;
+  height: 16.5rem;
+  margin-right: 2.5rem;
 }
 .review__img {
   object-fit: cover;
@@ -762,21 +763,17 @@ template {
 }
 .review__text {
   flex: 1;
-  padding: 24px 0;
-  max-width: 436px;
+  padding: 1.5rem 0;
+  max-width: 27.25rem;
 }
 .review__title {
   color: #292929;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 .review__desc {
-  margin-bottom: 26px;
-}
-.review__desc p {
-  font-size: 16px;
+  margin-bottom: 1.625rem;
 }
 .review__author {
-  font-size: 16px;
   font-weight: bold;
   color: #292929;
 }
@@ -787,9 +784,16 @@ template {
   justify-content: center;
 }
 
+.switcher__item {
+  margin-right: 0.375rem;
+}
+.switcher__item:last-child {
+  margin-right: 0;
+}
+
 .interactive__avatar {
-  width: 80px;
-  height: 80px;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
@@ -823,47 +827,47 @@ template {
 }
 .form__col {
   flex: 1;
-  margin-right: 26px;
+  margin-right: 1.625rem;
 }
 .form__col:last-child {
   margin-right: 0;
 }
 .form__row {
   display: flex;
-  margin-bottom: 14px;
+  margin-bottom: 0.875rem;
 }
 .form__block {
   flex: 1;
-  margin-right: 16px;
+  margin-right: 1rem;
 }
 .form__block:last-child {
   margin-right: 0;
 }
 .form__input {
   width: 100%;
-  height: 58px;
+  height: 3.625rem;
   border-radius: 4px;
-  padding-left: 12px;
+  padding-left: 0.75rem;
   border: none;
 }
 .form__input:focus {
   border: 3px solid #DEE2BD;
 }
 .form__textarea {
-  width: 450px;
-  height: 152px;
+  width: 28.125;
+  height: 9.5rem;
 }
 .form__controls {
-  margin-top: 36px;
-  margin-bottom: 48px;
+  margin-top: 2.25rem;
+  margin-bottom: 3rem;
 }
 .form__controls .form__row {
-  margin-bottom: 20px;
+  margin-bottom: 1.125rem;
 }
 
 .input {
   display: flex;
-  margin-right: 24px;
+  margin-right: 1.5rem;
   cursor: pointer;
   -webkit-user-select: none;
           user-select: none;
@@ -875,17 +879,17 @@ template {
   display: block;
 }
 .input__visible {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   position: relative;
   background: #ffffff;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 .input__visible::before {
   content: "";
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   position: absolute;
   display: none;

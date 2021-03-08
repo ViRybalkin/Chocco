@@ -1,10 +1,9 @@
 @mixin btn{
   display: inline-block;
-  padding: 18px 35px;
+  padding: 1.125rem 2.25rem;
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 100px;
-  font-size: 16px
 }
   .btn{
     @include btn;
@@ -31,7 +30,7 @@
       color: green;
       transition: 0.4s;
       font-weight: normal;
-      font-size: 14px;
+      font-size: 0.875rem;
       &:hover{
         color: $white;
       }

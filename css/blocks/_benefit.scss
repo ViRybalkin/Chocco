@@ -4,28 +4,25 @@
     display: flex;
     align-items: center;
     display: inline-block;
-    width: 128px;
-    height: 128px;
+    width: 8rem;
+    height: 8rem;
     border-radius: 50%;
     background: #F2F5F4;
     position: relative;
-    margin-bottom: 14px;
+    margin-bottom: 0.875rem;
   }
   &__icon{
-    width: 68px;
-    height: 68px;
+    width: 4.25rem;
+    height: 4.25rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
   }
   &__title{
-    font-size: 24px;
+    font-size: 1.5rem;
     color: $black;
-    margin-bottom: 16px;
-  }
-  &__desc p{
-    font-size: 16px;
+    margin-bottom: 1rem;
   }
 }
 

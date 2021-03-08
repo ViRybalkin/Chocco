@@ -1,12 +1,11 @@
+@import "variable";
 @import "base";
 @import "normalize";
 @import "fonts";
-@import "variable";
 
 @import "../blocks/header";
 @import "../blocks/menu";
 @import "../blocks/contacts";
-@import "../blocks/hero";
 @import "../blocks/hero__content";
 @import "../blocks/btn";
 @import "../blocks/features";
