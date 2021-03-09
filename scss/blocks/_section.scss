@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   flex: 1;
   color:#666666;
   height: 100vh;
@@ -11,11 +12,17 @@
 .section__headline{
   background: url(../../img/icons/узор-лист1.png) left center no-repeat;
   position: relative;
+  @include tablets{
+    background:url(../../img/icons/узор-лист1.png) left top 15% no-repeat;
+  }
   &:after{
     content: url(../../img/icons/малина1.png);
     position: absolute;
     bottom: -0.5rem;
     left: 0;
+    @include tablets{
+      bottom: -5.5rem;
+    }
     }
 }
 
@@ -23,6 +30,7 @@
   text-align: center;
   margin-bottom: 1.875rem;
   color: $black;
+  
 }
 
 .section-reviews{
@@ -50,32 +58,48 @@
 
 .section-form{
   background: 
-  url(../../img/icons/berry-form.png) left 5% bottom 10% no-repeat,
-  url(../../img/icons/laef-form.png) right 5% bottom 10% no-repeat,
-  url(../../img/bg/form-bg.png);
+  url(../../img/icons/berry-form.png) left 5% bottom 10%  no-repeat,
+  url(../../img/icons/laef-form.png) right 5% bottom 10%  no-repeat,
+  url(../../img/bg/form-bg.png) center center / cover no-repeat;
   color: $darkgreen;
   .section__title{
     color: $darkgreen;
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
+    @include tablets{
+      margin-bottom: 2rem;
+    }
+  }
+  @include tablets{
+    background:url(../../img/bg/form-bg.png) center center /cover no-repeat ;
   }
 }
 
 .section-hero{
   color: $white;
-  background: url(../../img/bg/узор1.png) right bottom no-repeat;
-  background-color:#61C4D9;
+  background: #61C4D9 url(../../img/bg/узор1.png) right bottom no-repeat;
   position: relative;
+  @include tablets{
+    background: #61C4D9 url(../../img/bg/узор1.png) right center no-repeat;
+  }
+
   &:before{
     position: absolute;
     content: url(../../img/icons/Лист.png);
     bottom: -2.5rem;
     left: 2%;
+    @include tablets{
+      display: none;
+    }
   }
   &::after{
     position: absolute;
     content: url(../../img/icons/comp.png);
     bottom: -2.5rem;
     right: 0;
+    @include tablets{
+      bottom: 25.5rem;
+      right: 7rem;
+    }
   }
 }
 

@@ -1,0 +1,47 @@
+.review{
+  display: flex;
+  @include tablets{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+  &__avatar{
+    width: 15.875rem;
+    height: 16.5rem;
+    margin-right: 2.5rem;
+    @include tablets{
+      margin-right: 0;
+      width: 8.125rem;
+      height: 8.125rem;
+    }
+  }
+  &__img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  &__text{
+    flex: 1;
+    padding: 1.5rem 0;
+    max-width: 27.25rem;
+    @include tablets{
+      max-width: 100%;
+    }
+  }
+  &__title{
+    color: $black;
+    margin-bottom: 0.75rem;
+  }
+  &__desc{
+    margin-bottom: 1.625rem;
+    @include tablets{
+      margin-bottom: 1rem;
+    }
+  }
+  &__author{
+    font-weight: bold;
+    color: $black;
+  }
+}

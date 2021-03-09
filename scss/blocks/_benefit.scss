@@ -23,6 +23,9 @@
     font-size: 1.5rem;
     color: $black;
     margin-bottom: 1rem;
+    @include tablets{
+      margin-bottom: 0.5rem;
+    }
   }
 }
 

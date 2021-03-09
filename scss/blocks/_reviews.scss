@@ -4,6 +4,10 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 1rem;
+  @include tablets{
+    padding: 2.5rem 1.5rem 0;
+    background: #F8FAF9 url(../../img/bg/review-bg.png) right top no-repeat;
+  }
   &::after{
     content: "";
     width: 5.125rem;
@@ -14,36 +18,5 @@
     top: -3.75rem;
     left: 50%;
     transform: translateX(-50%);
-  }
-}
-
-.review{
-  display: flex;
-  &__avatar{
-    width: 15.875rem;
-    height: 16.5rem;
-    margin-right: 2.5rem;
-  }
-  &__img{
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-  }
-  &__text{
-    flex: 1;
-    padding: 1.5rem 0;
-    max-width: 27.25rem;
-  }
-  &__title{
-    color: $black;
-    margin-bottom: 0.75rem;
-  }
-  &__desc{
-    margin-bottom: 1.625rem;
-
-  }
-  &__author{
-    font-weight: bold;
-    color: $black;
   }
 }

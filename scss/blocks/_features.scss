@@ -8,5 +8,8 @@
         margin-right: 0;
     }
   }
+  @include tablets{
+    display: none;
+  }
 }
 

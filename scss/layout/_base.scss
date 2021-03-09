@@ -78,6 +78,9 @@ cursor: pointer;
   min-height: 100%;
   display: flex;
   flex-direction:column;
+  @include tablets{
+    min-width:$tabletsWidth;
+  }
 }
 
 .main-content{
@@ -87,6 +90,9 @@ cursor: pointer;
 .container{
   width:$containerWidth;
   margin: 0 auto;
+  @include tablets{
+    width: $tabletsWidth;
+  }
 }
 
 .hero__container{
@@ -96,4 +102,13 @@ cursor: pointer;
   height: 100%;
   background: url(../../img/bg/Батончики.png) right center / 50% auto no-repeat;
   padding: 1.25rem 0 3.125rem;
+  @include tablets{
+    background:url(../../img/bg/Батончики.png) top 30% center/50% auto no-repeat;
+  }
+}
+
+.container-form{
+  @include tablets{
+    padding: 0 7.125rem;
+  }
 }
