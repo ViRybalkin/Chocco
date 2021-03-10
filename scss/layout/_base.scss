@@ -86,10 +86,13 @@ cursor: pointer;
   display: flex;
   flex-direction:column;
   @include tablets{
-    min-width:$tabletsWidth;
+    min-width:$tabletsWidth + 1.5rem;
   }
   @include phone{
     min-width:$phoneWidth + 1.5rem;
+  }
+  @include smallPhone{
+    min-width:$smallPhoneWidth + 1.25rem;
   }
 }
 
@@ -105,6 +108,9 @@ cursor: pointer;
   }
   @include phone{
     width: $phoneWidth;
+  }
+  @include smallPhone{
+    width:$smallPhoneWidth;
   }
 }
 

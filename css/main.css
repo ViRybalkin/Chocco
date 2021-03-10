@@ -91,12 +91,17 @@ input[type=reset] {
 }
 @media (max-width: 768px) {
   .wrapper {
-    min-width: 43.875rem;
+    min-width: 45.375rem;
   }
 }
 @media (max-width: 480px) {
   .wrapper {
     min-width: 29rem;
+  }
+}
+@media (min-width: 310px) and (max-width: 460px) {
+  .wrapper {
+    min-width: 20rem;
   }
 }
 
@@ -116,6 +121,11 @@ input[type=reset] {
 @media (max-width: 480px) {
   .container {
     width: 27.5rem;
+  }
+}
+@media (min-width: 310px) and (max-width: 460px) {
+  .container {
+    width: 18.75rem;
   }
 }
 
@@ -751,6 +761,11 @@ template {
     background: url(../../img/icons/comp.png) center center/60% auto no-repeat;
     bottom: 16.5rem;
     right: -6rem;
+  }
+}
+@media (min-width: 310px) and (max-width: 460px) {
+  .section-hero::after {
+    bottom: 21.5rem;
   }
 }
 

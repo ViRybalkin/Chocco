@@ -46,6 +46,9 @@
       bottom: 16.5rem;
       right: -6rem;
     }
+    @include smallPhone {
+      bottom: 21.5rem;
+    }
   }
 }
 

@@ -9,3 +9,8 @@
       @content;
   }
 }
+@mixin smallPhone {
+  @media (min-width: 310px) and (max-width:460px){
+      @content;
+  }
+}
