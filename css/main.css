@@ -134,7 +134,7 @@ input[type=reset] {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  background: url(../../img/bg/Батончики.png) right center/50% auto no-repeat;
+  background: url(../img/bg/Батончики.png) right center/50% auto no-repeat;
   padding: 1.25rem 0 3.125rem;
 }
 @media (max-width: 768px) {
@@ -555,8 +555,8 @@ template {
   }
 }
 .contacts__icon {
-  width: 0.75rem;
-  height: 0.75rem;
+  width: 0.875rem;
+  height: 0.875rem;
   margin-right: 0.375rem;
   fill: #ffffff;
 }
@@ -727,22 +727,22 @@ template {
 
 .section-hero {
   color: #ffffff;
-  background: #61C4D9 url(../../img/bg/узор1.png) right bottom no-repeat;
+  background: #61C4D9 url(../img/bg/узор1.png) right bottom no-repeat;
   position: relative;
 }
 @media (max-width: 768px) {
   .section-hero {
-    background: #61C4D9 url(../../img/bg/узор1.png) right center/70% auto no-repeat;
+    background: #61C4D9 url(../img/bg/узор1.png) right center/70% auto no-repeat;
   }
 }
 @media (max-width: 480px) {
   .section-hero {
-    background: #61C4D9 url(../../img/bg/узор1.png) right top 24%/70% auto no-repeat;
+    background: #61C4D9 url(../img/bg/узор1.png) right top 24%/70% auto no-repeat;
   }
 }
 .section-hero:before {
   position: absolute;
-  content: url(../../img/icons/Лист.png);
+  content: url(../img/icons/Лист.png);
   bottom: -2.5rem;
   left: 2%;
 }
@@ -754,7 +754,7 @@ template {
 .section-hero::after {
   position: absolute;
   content: "";
-  background: url(../../img/icons/comp.png) center center/100% auto no-repeat;
+  background: url(../img/icons/comp.png) center center/100% auto no-repeat;
   width: 32.5rem;
   height: 40.25rem;
   bottom: -2.5rem;
@@ -762,14 +762,14 @@ template {
 }
 @media (max-width: 768px) {
   .section-hero::after {
-    background: url(../../img/icons/comp.png) center center/71% auto no-repeat;
+    background: url(../img/icons/comp.png) center center/71% auto no-repeat;
     bottom: 18.5rem;
     right: 4rem;
   }
 }
 @media (max-width: 480px) {
   .section-hero::after {
-    background: url(../../img/icons/comp.png) center center/60% auto no-repeat;
+    background: url(../img/icons/comp.png) center center/60% auto no-repeat;
     bottom: 16.5rem;
     right: -6rem;
   }
@@ -781,12 +781,12 @@ template {
 }
 
 .section__headline {
-  background: url(../../img/icons/узор-лист1.png) left center no-repeat;
+  background: url(../img/icons/узор-лист1.png) left center no-repeat;
   position: relative;
 }
 @media (max-width: 768px) {
   .section__headline {
-    background: url(../../img/icons/узор-лист1.png) left top 15% no-repeat;
+    background: url(../img/icons/узор-лист1.png) left top 15% no-repeat;
   }
 }
 @media (max-width: 480px) {
@@ -795,7 +795,7 @@ template {
   }
 }
 .section__headline:after {
-  content: url(../../img/icons/малина1.png);
+  content: url(../img/icons/малина1.png);
   position: absolute;
   bottom: -0.5rem;
   left: 0;
@@ -819,11 +819,11 @@ template {
 
 .section-reviews {
   position: relative;
-  background: url(../../img/icons/review-berry2.png) right top no-repeat;
+  background: url(../img/icons/review-berry2.png) right top no-repeat;
 }
 .section-reviews::before {
   content: "";
-  background: url(../../img/icons/review-bg1.png) right bottom no-repeat;
+  background: url(../img/icons/review-bg1.png) right bottom no-repeat;
   width: 6.25rem;
   height: 20rem;
   position: absolute;
@@ -832,7 +832,7 @@ template {
 }
 .section-reviews::after {
   content: "";
-  background: url(../../img/icons/review-berry.png) right bottom no-repeat;
+  background: url(../img/icons/review-berry.png) right bottom no-repeat;
   width: 8.5rem;
   height: 12rem;
   position: absolute;
@@ -841,17 +841,17 @@ template {
 }
 
 .section-form {
-  background: url(../../img/icons/berry-form.png) left 5% bottom 10% no-repeat, url(../../img/icons/laef-form.png) right 5% bottom 10% no-repeat, url(../../img/bg/form-bg.png) center center/cover no-repeat;
+  background: url(../img/icons/berry-form.png) left 5% bottom 10% no-repeat, url(../img/icons/laef-form.png) right 5% bottom 10% no-repeat, url(../img/bg/form-bg.png) center center/cover no-repeat;
   color: #365A49;
 }
 @media (max-width: 768px) {
   .section-form {
-    background: url(../../img/bg/form-bg.png) center center/cover no-repeat;
+    background: url(../img/bg/form-bg.png) center center/cover no-repeat;
   }
 }
 @media (max-width: 480px) {
   .section-form {
-    background-image: url(../../img/bg/form-bg.png) center center/cover no-repeat;
+    background-image: url(../img/bg/form-bg.png) center center/cover no-repeat;
   }
 }
 .section-form .section__title {
@@ -866,7 +866,7 @@ template {
 
 .section-map {
   position: relative;
-  background: url(../../img/bg/map.png) center center/cover no-repeat;
+  background: url(../img/bg/map.png) center center/cover no-repeat;
 }
 
 .headline {
