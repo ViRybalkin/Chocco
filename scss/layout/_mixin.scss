@@ -3,6 +3,7 @@
       @content;
   }
 }
+
 @mixin phone {
   @media (max-width: 480px){
       @content;

@@ -1,17 +1,33 @@
 .benefits__list{
   display: flex;
+  @include phone{
+    display: block;
+  }
 }
 
 .benefits__item{
   flex: 1;
   padding: 0 3%;
   position: relative;
+  @include phone{
+    display: flex;
+    padding: 0;
+  }
+  @include phone{
+    margin-bottom: 0.875rem;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
   &::before{
     content: url(../../img/icons/circles.png);
     position: absolute;
     top: 3.75rem;
     right: 0;
     transform: translateX(50%);
+    @include phone{
+      display: none;
+    }
   }
   &:first-child{
     padding-left: 0;

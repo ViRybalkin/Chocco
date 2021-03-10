@@ -29,6 +29,9 @@
     @include tablets{
       max-width: 100%;
     }
+    @include phone{
+      padding: 1.5rem 0 0;
+    }
   }
   &__title{
     color: $black;
@@ -43,5 +46,13 @@
   &__author{
     font-weight: bold;
     color: $black;
+    text-align: center;
+  }
+  &__author--phone{
+    display: none;
+    @include phone{
+      display: block;
+      margin-bottom: 3rem;
+    }
   }
 }

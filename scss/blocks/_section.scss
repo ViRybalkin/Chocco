@@ -9,11 +9,54 @@
   min-height: 40.625rem;
 }
 
+.section-hero{
+  color: $white;
+  background: #61C4D9 url(../../img/bg/узор1.png) right bottom no-repeat;
+  position: relative;
+  @include tablets{
+    background: #61C4D9 url(../../img/bg/узор1.png) right center /70% auto  no-repeat;
+  }
+  @include phone{
+    background: #61C4D9 url(../../img/bg/узор1.png) right top 24% /70% auto  no-repeat;
+  }
+  &:before{
+    position: absolute;
+    content: url(../../img/icons/Лист.png);
+    bottom: -2.5rem;
+    left: 2%;
+    @include tablets{
+      display: none;
+    }
+  }
+  &::after{
+    position: absolute;
+    content: "";
+    background: url(../../img/icons/comp.png) center center/ 100% auto no-repeat;
+    width: 32.5rem;
+    height: 40.25rem;
+    bottom: -2.5rem;
+    right: 0;
+    @include tablets{
+      background: url(../../img/icons/comp.png) center center/71% auto no-repeat;
+    bottom: 18.5rem;
+    right: 4rem;
+    }
+    @include phone {
+      background: url(../../img/icons/comp.png) center center/60% auto no-repeat;
+      bottom: 16.5rem;
+      right: -6rem;
+    }
+  }
+}
+
 .section__headline{
   background: url(../../img/icons/узор-лист1.png) left center no-repeat;
   position: relative;
   @include tablets{
     background:url(../../img/icons/узор-лист1.png) left top 15% no-repeat;
+  }
+  @include phone{
+    background:none;
   }
   &:after{
     content: url(../../img/icons/малина1.png);
@@ -23,7 +66,10 @@
     @include tablets{
       bottom: -5.5rem;
     }
+    @include phone{
+      display: none;
     }
+  }
 }
 
 .section__title{
@@ -62,46 +108,27 @@
   url(../../img/icons/laef-form.png) right 5% bottom 10%  no-repeat,
   url(../../img/bg/form-bg.png) center center / cover no-repeat;
   color: $darkgreen;
+  @include tablets{
+    background:url(../../img/bg/form-bg.png) center center /cover no-repeat ;
+  }
+  @include phone{
+    background-image:url(../../img/bg/form-bg.png) center center /cover no-repeat ;
+  }
   .section__title{
     color: $darkgreen;
     margin-bottom: 3.75rem;
     @include tablets{
       margin-bottom: 2rem;
+       
     }
-  }
-  @include tablets{
-    background:url(../../img/bg/form-bg.png) center center /cover no-repeat ;
   }
 }
 
-.section-hero{
-  color: $white;
-  background: #61C4D9 url(../../img/bg/узор1.png) right bottom no-repeat;
+
+
+
+.section-map{
   position: relative;
-  @include tablets{
-    background: #61C4D9 url(../../img/bg/узор1.png) right center no-repeat;
-  }
-
-  &:before{
-    position: absolute;
-    content: url(../../img/icons/Лист.png);
-    bottom: -2.5rem;
-    left: 2%;
-    @include tablets{
-      display: none;
-    }
-  }
-  &::after{
-    position: absolute;
-    content: url(../../img/icons/comp.png);
-    bottom: -2.5rem;
-    right: 0;
-    @include tablets{
-      bottom: 25.5rem;
-      right: 7rem;
-    }
-  }
+  background: url(../../img/bg/map.png) center center /cover no-repeat;
 }
-
-
 

@@ -12,6 +12,10 @@
   &:hover{
     border-color: $darkgreen;
   }
+  @include phone {
+    width: 4rem;
+    height: 4rem;
+  }
 }
 
 .interactive__avatar__link{

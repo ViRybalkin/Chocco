@@ -5,6 +5,9 @@
     @include tablets{
       margin-bottom: 0;
     }
+    @include phone{
+      margin-bottom: 0.5rem;
+    }
   }
   &__subtitle{
     margin-bottom: 1.175rem;
@@ -12,6 +15,9 @@
     padding-right: 15%;
     @include tablets{
       padding: 0 9rem;
+    }
+    @include phone{
+      padding: 0px 3rem;
     }
   }
   @include tablets{

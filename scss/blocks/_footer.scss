@@ -1,0 +1,25 @@
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: $white;
+  padding: 1.5rem 0;
+}
+
+.footer-contacts{
+  display: flex;
+  justify-content: space-between;
+  @include phone{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contacts__number{
+    color: $green;
+  }
+}

@@ -46,12 +46,19 @@ h1{
   font-size: 2.625rem;
   font-weight: bold;
   text-transform: uppercase;
+  @include phone{
+    font-size: 2.25rem;
+    line-height: 1;
+  }
 }
 
 h2{
   font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
+  @include phone{
+    font-size: 2.25rem;
+  }
 }
 
 h3{
@@ -81,6 +88,9 @@ cursor: pointer;
   @include tablets{
     min-width:$tabletsWidth;
   }
+  @include phone{
+    min-width:$phoneWidth + 1.5rem;
+  }
 }
 
 .main-content{
@@ -93,6 +103,9 @@ cursor: pointer;
   @include tablets{
     width: $tabletsWidth;
   }
+  @include phone{
+    width: $phoneWidth;
+  }
 }
 
 .hero__container{
@@ -103,12 +116,16 @@ cursor: pointer;
   background: url(../../img/bg/Батончики.png) right center / 50% auto no-repeat;
   padding: 1.25rem 0 3.125rem;
   @include tablets{
-    background:url(../../img/bg/Батончики.png) top 30% center/50% auto no-repeat;
+    background-position: top 30% center;
   }
+
 }
 
 .container-form{
   @include tablets{
     padding: 0 7.125rem;
+  }
+  @include phone{
+    padding: 0 ;
   }
 }

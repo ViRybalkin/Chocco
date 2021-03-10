@@ -1,15 +1,21 @@
 .benefit{
   text-align: center;
+  @include phone{
+    text-align: left;
+  }
   &__img-wrapper{
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    display: inline-block;
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
     background: #F2F5F4;
     position: relative;
     margin-bottom: 0.875rem;
+    @include phone{
+      width: 19rem;
+      margin-right: 0.75rem;
+    }
   }
   &__icon{
     width: 4.25rem;
