@@ -995,7 +995,7 @@ template {
 }
 
 .review__wrapper {
-  background: #F8FAF9 url(../../img/bg/review-bg.png) right top 13% no-repeat;
+  background: #F8FAF9 url(../img/bg/review-bg.png) right top 13% no-repeat;
   padding: 2.625rem 2.25rem;
   position: relative;
   overflow: hidden;
@@ -1004,7 +1004,7 @@ template {
 @media (max-width: 768px) {
   .review__wrapper {
     padding: 2.5rem 1.5rem 0;
-    background: #F8FAF9 url(../../img/bg/review-bg.png) right top no-repeat;
+    background: #F8FAF9 url(../img/bg/review-bg.png) right top no-repeat;
   }
 }
 @media (max-width: 768px) {
@@ -1324,3 +1324,4 @@ template {
 .social__icon:hover {
   fill: #292929;
 }
+/*# sourceMappingURL=main.css.map */

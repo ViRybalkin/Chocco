@@ -1,12 +1,12 @@
 .review__wrapper{
-  background: #F8FAF9 url(../../img/bg/review-bg.png) right top 13% no-repeat;
+  background: #F8FAF9 url(../img/bg/review-bg.png) right top 13% no-repeat;
   padding: 2.625rem 2.25rem;
   position: relative;
   overflow: hidden;
   margin-bottom: 1rem;
   @include tablets{
     padding: 2.5rem 1.5rem 0;
-    background: #F8FAF9 url(../../img/bg/review-bg.png) right top no-repeat;
+    background: #F8FAF9 url(../img/bg/review-bg.png) right top no-repeat;
   }
   @include tablets{
     padding-top: 3.5rem;
