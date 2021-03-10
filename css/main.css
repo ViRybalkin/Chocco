@@ -565,6 +565,7 @@ template {
 }
 .contacts__address {
   color: #000;
+  margin-bottom: 0.375rem;
 }
 @media (max-width: 480px) {
   .contacts__address {
@@ -1286,12 +1287,15 @@ template {
   left: 0;
   right: 0;
   background: #ffffff;
-  padding: 1.5rem 0;
+  padding: 1.2rem 0;
 }
 
 .footer-contacts {
   display: flex;
   justify-content: space-between;
+}
+.footer-contacts .contacts {
+  font-size: 1.125rem;
 }
 @media (max-width: 480px) {
   .footer-contacts {
@@ -1310,7 +1314,7 @@ template {
   align-items: center;
 }
 .social__item {
-  margin-right: 1.125rem;
+  margin-right: 1rem;
 }
 .social__item:last-child {
   margin-right: 0;
