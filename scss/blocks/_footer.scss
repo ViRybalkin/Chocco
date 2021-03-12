@@ -15,14 +15,18 @@
   justify-content: space-between;
   .contacts{
     font-size: 1.125rem;
+    &__link{
+      display: block;
+      color: $green;
+      @include phone{
+        margin-bottom: 1.125rem;
+      }
+    }
   }
   @include phone{
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-  .contacts__number{
-    color: $green;
   }
 }

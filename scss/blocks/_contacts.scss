@@ -1,8 +1,6 @@
 .contacts{
   font-size: 1.375rem;
-  @include phone{
-    margin-bottom: 0.75rem;
-  }
+  white-space: nowrap;
     &__icon{
       width: 0.875rem;
       height: 0.875rem;

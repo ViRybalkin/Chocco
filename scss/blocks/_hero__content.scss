@@ -1,12 +1,29 @@
 .hero{
   max-width: 46%;
+  @include tablets{
+    max-width: 100%;
+    justify-content: center;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    &::before{
+      content: "";
+      background: url(../../img/icons/comp-tablets.png) center center/ contain no-repeat;
+      width: 23.125rem;
+      height: 23.5rem;
+      margin-bottom: 2.25rem;
+      @include phone{
+        width: 18.125rem;
+        height: 18.5rem;
+      }
+    }
+  }
   &__title{
     margin-bottom: 1.25rem;
     @include tablets{
-      margin-bottom: 0;
-    }
-    @include phone{
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.75rem;
     }
   }
   &__subtitle{
@@ -14,15 +31,10 @@
     font-size: 1.125rem;
     padding-right: 15%;
     @include tablets{
-      padding: 0 9rem;
+      padding: 0 28%;
     }
     @include phone{
-      padding: 0px 3rem;
+      padding: 0 16%;
     }
-  }
-  @include tablets{
-    max-width: 100%;
-    text-align: center;
-    margin-bottom: 5rem;
   }
 }

@@ -14,10 +14,7 @@
   background: #61C4D9 url(../img/bg/узор1.png) right bottom no-repeat;
   position: relative;
   @include tablets{
-    background: #61C4D9 url(../img/bg/узор1.png) right center /70% auto  no-repeat;
-  }
-  @include phone{
-    background: #61C4D9 url(../img/bg/узор1.png) right top 24% /70% auto  no-repeat;
+    background-position: right top 27%;
   }
   &:before{
     position: absolute;
@@ -37,17 +34,7 @@
     bottom: -2.5rem;
     right: 0;
     @include tablets{
-      background: url(../img/icons/comp.png) center center/71% auto no-repeat;
-    bottom: 18.5rem;
-    right: 4rem;
-    }
-    @include phone {
-      background: url(../img/icons/comp.png) center center/60% auto no-repeat;
-      bottom: 16.5rem;
-      right: -6rem;
-    }
-    @include smallPhone {
-      bottom: 21.5rem;
+      display: none;
     }
   }
 }
@@ -56,22 +43,19 @@
   background: url(../img/icons/узор-лист1.png) left center no-repeat;
   position: relative;
   @include tablets{
-    background:url(../img/icons/узор-лист1.png) left top 15% no-repeat;
+    background-position: left top 20%;
   }
   @include phone{
-    background:none;
+  background: none;
   }
   &:after{
     content: url(../img/icons/малина1.png);
     position: absolute;
-    bottom: -0.5rem;
+    bottom: -6.5rem;
     left: 0;
-    @include tablets{
-      bottom: -5.5rem;
-    }
     @include phone{
       display: none;
-    }
+      }
   }
 }
 
@@ -79,29 +63,40 @@
   text-align: center;
   margin-bottom: 1.875rem;
   color: $black;
-  
+
 }
 
 .section-reviews{
   position: relative;
-  background: url(../img/icons/review-berry2.png) right top no-repeat;
+  background: url(../img/icons/review-berry2.png) right top/ contain no-repeat;
+  background-size: 8.5rem 4.875rem ;
   &::before{
     content: "";
-    background:url(../img/icons/review-bg1.png)right bottom no-repeat;
+    background:url(../img/icons/review-bg1.png)right bottom/ contain no-repeat;
     width: 6.25rem;
     height: 20rem;
     position: absolute;
     bottom: -9.75rem;
     left: 0;
+    @include phone{
+      width: 4.25rem;
+      height: 17rem;
+      bottom: -6.75rem;
+    }
   }
   &::after{
     content: "";
-    background:url(../img/icons/review-berry.png) right bottom no-repeat;
+    background:url(../img/icons/review-berry.png) right bottom / contain  no-repeat;
     width: 8.5rem;
     height: 12rem;
     position: absolute;
     bottom: -4.5rem;
     left: 0;
+    @include phone{
+      width: 5.5rem;
+       height: 10rem; 
+       bottom: -3.5rem; 
+    }
   }
 }
 
@@ -122,7 +117,9 @@
     margin-bottom: 3.75rem;
     @include tablets{
       margin-bottom: 2rem;
-       
+    }
+    @include phone{
+      margin-bottom: 0;
     }
   }
 }

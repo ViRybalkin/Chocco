@@ -1,7 +1,11 @@
 .form{
   display: flex;
   @include tablets{
-    display: block;
+    flex-direction: column;
+    padding: 0 15%;
+  }
+  @include phone{
+    padding: 0;
   }
   &__col{
     flex: 1;
@@ -23,9 +27,6 @@
     &:last-child{
       margin-right: 0;
     }
-    @include tablets{
-      margin-right: 1.25rem;
-    }
   }
   &__input{
     width: 100%;
@@ -33,31 +34,27 @@
     border-radius: 4px;
     padding-left: 0.75rem;
     border: none;
+    @include tablets{
+     height: 2.25rem;
+    }
     &:focus{
       border: 3px solid #DEE2BD;;
-    }
-    @include tablets{
-      height: 2.25rem;
     }
   }
   &__textarea{
     width: 28.125;
     height: 9.5rem;
     @include tablets{
-      height: 5.125rem;
+     height: 5.125rem;
     }
   }
   &__controls{
     margin-top: 2.25rem;
     margin-bottom: 3rem;
-    @include tablets{
-      margin-top: 1.375rem;
-      margin-bottom: 2.75rem;
-    }
     @include phone{
       display: flex;
-      align-items: center;
       flex-direction: column;
+      align-items: center;
     }
     .form__row{
       margin-bottom: 1.125rem;
@@ -66,9 +63,7 @@
   &-btn{
     @include tablets{
       display: flex;
-      align-items: center;
       justify-content: center;
-    }
+   }
   }
 }
-

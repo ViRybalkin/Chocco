@@ -9,17 +9,15 @@
 
 .headline__title{
   margin-bottom: 1.25rem;
-  @include tablets{
-    margin-bottom: 0.25rem;
-  }
+
 }
 
 .headline__subtitle{
   padding: 0 26%;
   @include tablets{
-    padding: 0 19%;
+    padding: 0px 19%;
   }
   @include phone{
-    padding:0;
+    padding: 0;
   }
 }

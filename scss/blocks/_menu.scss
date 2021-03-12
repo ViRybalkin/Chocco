@@ -1,12 +1,19 @@
 .menu{
   display: flex;
   align-items: center;
+  white-space: nowrap;
+  margin: 0 0.625rem;
+  flex-wrap: wrap;
   &__list{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.45rem;
   }
   &__item{
     margin-right: 1.75rem;
+    margin-bottom: 0.625rem;
     &:last-child{
       margin-right: 0;
     }

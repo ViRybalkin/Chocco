@@ -1,9 +1,15 @@
 *{
   box-sizing: border-box;
 }
-
-html,body{
+html{
   height: 100%;
+  font-size:$baseFontsSize ;
+  @include tablets{
+    font-size:$baseFontsSize - 2px;
+  }
+  @include phone{
+    font-size:$baseFontsSize - 4px;
+  }
 }
 
 body{
@@ -14,6 +20,8 @@ body{
   -moz-osx-font-smoothing:grayscale;
   overflow-x: hidden;
   color: black;
+  height: 100%;
+
 }
 
 img{
@@ -47,7 +55,6 @@ h1{
   font-weight: bold;
   text-transform: uppercase;
   @include phone{
-    font-size: 2.25rem;
     line-height: 1;
   }
 }
@@ -56,9 +63,6 @@ h2{
   font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
-  @include phone{
-    font-size: 2.25rem;
-  }
 }
 
 h3{
@@ -81,19 +85,10 @@ cursor: pointer;
 .wrapper{
   margin: 0 auto;
   overflow: hidden;
-  min-width:$containerWidth + 1.875rem;
+  width:100%;
   min-height: 100%;
   display: flex;
   flex-direction:column;
-  @include tablets{
-    min-width:$tabletsWidth + 1.5rem;
-  }
-  @include phone{
-    min-width:$phoneWidth + 1.5rem;
-  }
-  @include smallPhone{
-    min-width:$smallPhoneWidth + 1.25rem;
-  }
 }
 
 .main-content{
@@ -101,17 +96,9 @@ cursor: pointer;
 }
 
 .container{
+  max-width: 95%;
   width:$containerWidth;
   margin: 0 auto;
-  @include tablets{
-    width: $tabletsWidth;
-  }
-  @include phone{
-    width: $phoneWidth;
-  }
-  @include smallPhone{
-    width:$smallPhoneWidth;
-  }
 }
 
 .hero__container{
@@ -122,16 +109,6 @@ cursor: pointer;
   background: url(../img/bg/Батончики.png) right center / 50% auto no-repeat;
   padding: 1.25rem 0 3.125rem;
   @include tablets{
-    background-position: top 30% center;
-  }
-
-}
-
-.container-form{
-  @include tablets{
-    padding: 0 7.125rem;
-  }
-  @include phone{
-    padding: 0 ;
+    background: none;
   }
 }

@@ -1,17 +1,45 @@
 .header{
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items:flex-start;
   @include tablets{
     display: none;
   }
 }
 
 .header-mobile{
+  display: flex;
   justify-content: space-between;
   align-items: center;
   display: none;
   @include tablets{
     display: flex;
+  }
+  &__menu{
+    display: inline-flex;
+    width: 1.625rem;
+    height: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__item{
+    border-radius: 0.625rem;
+    height: 0.25rem;
+    background: $white;
+    position: relative;
+    &:before, &:after{
+      content: "";
+      border-radius:0.625rem;
+      width: 100%;
+      position: absolute;
+      background: $white;
+      height: 0.25rem;
+    }
+    &::after{
+      bottom: 0.5rem;
+    }
+    &::before{
+      top: 0.5rem;
+    }
   }
 }

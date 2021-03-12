@@ -47,6 +47,9 @@
     font-weight: bold;
     color: $black;
     text-align: center;
+    @include phone{
+      display: none;
+    }
   }
   &__author--phone{
     display: none;
