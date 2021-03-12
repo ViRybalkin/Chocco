@@ -1071,7 +1071,7 @@ template {
 }
 @media (max-width: 480px) {
   .review__text {
-    padding: 1.5rem 0 0;
+    padding: 1.5rem 0;
   }
 }
 .review__title {
@@ -1089,21 +1089,6 @@ template {
 .review__author {
   font-weight: bold;
   color: #292929;
-  text-align: center;
-}
-@media (max-width: 480px) {
-  .review__author {
-    display: none;
-  }
-}
-.review__author--phone {
-  display: none;
-}
-@media (max-width: 480px) {
-  .review__author--phone {
-    display: block;
-    margin-bottom: 3rem;
-  }
 }
 
 .switcher {

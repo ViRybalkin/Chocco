@@ -30,7 +30,7 @@
       max-width: 100%;
     }
     @include phone{
-      padding: 1.5rem 0 0;
+      padding: 1.5rem 0;
     }
   }
   &__title{
@@ -46,16 +46,5 @@
   &__author{
     font-weight: bold;
     color: $black;
-    text-align: center;
-    @include phone{
-      display: none;
-    }
-  }
-  &__author--phone{
-    display: none;
-    @include phone{
-      display: block;
-      margin-bottom: 3rem;
-    }
   }
 }
