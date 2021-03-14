@@ -29,7 +29,7 @@
     @include tablets{
       max-width: 100%;
     }
-    @include phone{
+    @include phone{ 
       padding: 1.5rem 0;
     }
   }
