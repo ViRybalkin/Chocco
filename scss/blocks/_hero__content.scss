@@ -11,12 +11,12 @@
     &::before{
       content: "";
       background: url(../img/icons/comp-tablets.png) center center/ contain no-repeat;
-      width: 23.125rem;
-      height: 23.5rem;
-      margin-bottom: 2.25rem;
+      width: rem(370px);
+      height: rem(376px);
+      margin-bottom: rem(36px);
       @include phone{
-        width: 18.125rem;
-        height: 18.5rem;
+        width: rem(290px);
+        height: rem(296px);
       }
     }
   }

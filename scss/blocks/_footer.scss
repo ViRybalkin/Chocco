@@ -7,19 +7,19 @@
   left: 0;
   right: 0;
   background: $white;
-  padding: 1.2rem 0;
+  padding: rem(20px) 0;
 }
 
 .footer-contacts{
   display: flex;
   justify-content: space-between;
   .contacts{
-    font-size: 1.125rem;
+    font-size: rem(18px);
     &__link{
       display: block;
       color: $green;
       @include phone{
-        margin-bottom: 1.125rem;
+        margin-bottom: rem(18px);
       }
     }
   }

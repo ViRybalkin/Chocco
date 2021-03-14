@@ -14,7 +14,7 @@ html{
 
 body{
   font-family: "alegreya_sans", Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: $baseFontsSize;
   line-height: 1.42;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
@@ -51,7 +51,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 h1{
-  font-size: 2.625rem;
+  font-size: rem(42px);
   font-weight: bold;
   text-transform: uppercase;
   @include phone{
@@ -60,13 +60,13 @@ h1{
 }
 
 h2{
-  font-size: 2.5rem;
+  font-size: rem(40px);
   font-weight: bold;
   text-transform: uppercase;
 }
 
 h3{
-  font-size: 1.5rem;
+  font-size: rem(20px);
   font-weight: bold;
 }
 
@@ -107,7 +107,7 @@ cursor: pointer;
   justify-content: space-between;
   height: 100%;
   background: url(../img/bg/Батончики.png) right center / 50% auto no-repeat;
-  padding: 1.25rem 0 3.125rem;
+  padding: rem(20px) 0 rem(50px); 
   @include tablets{
     background: none;
   }

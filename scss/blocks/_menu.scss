@@ -2,18 +2,18 @@
   display: flex;
   align-items: center;
   white-space: nowrap;
-  margin: 0 0.625rem;
+  margin: 0 rem(10px);
   flex-wrap: wrap;
   &__list{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding-top: 0.45rem;
+    padding-top: rem(7px);
   }
   &__item{
-    margin-right: 1.75rem;
-    margin-bottom: 0.625rem;
+    margin-right: rem(28px);
+    margin-bottom: rem(10px);
     &:last-child{
       margin-right: 0;
     }

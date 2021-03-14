@@ -9,3 +9,7 @@
       @content;
   }
 }
+
+@function rem($px){
+	@return $px / $baseFontsSize + 0rem;
+}

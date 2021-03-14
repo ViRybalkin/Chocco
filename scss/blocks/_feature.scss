@@ -1,14 +1,14 @@
 .feature{
   display: flex;
   &__icon{
-    width: 2.875rem;
-    height: 2.875rem;
-    margin-right: 0.375rem;
+    width: rem(46px);
+    height: rem(46px);
+    margin-right: rem(6px);
     fill: $lightblue;
   }
   &__text{
-    max-width: 4.75rem;
-    font-size: 0.875rem;
+    max-width: rem(76px);
+    font-size: rem(14px);
   }
 }
 

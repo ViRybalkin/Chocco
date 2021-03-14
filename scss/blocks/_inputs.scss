@@ -1,6 +1,6 @@
 .input{
   display: flex;
-  margin-right: 1.5rem;
+  margin-right: rem(24px);
   cursor: pointer;
   user-select: none;
   &__radio{
@@ -12,16 +12,16 @@
     }
   }
   &__visible{
-    width: 1.5rem;
-    height: 1.5rem;
+    width: rem(24px);
+    height: rem(24px);
     position: relative;
     background: $white;
     border-radius: 50%;
-    margin-right: 0.625rem;
+    margin-right: rem(10px);
     &::before{
       content: "";
-      width: 0.75rem;
-      height: 0.75rem;
+      width: rem(12px);
+      height: rem(12px);
       border-radius: 50%;
       position: absolute;
       display: none;

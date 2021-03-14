@@ -73,7 +73,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: bold;
 }
 
@@ -537,7 +537,7 @@ template {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-top: 0.45rem;
+  padding-top: 0.4375rem;
 }
 .menu__item {
   margin-right: 1.75rem;
@@ -762,7 +762,7 @@ template {
   background: url(../img/icons/comp.png) center center/100% auto no-repeat;
   width: 32.5rem;
   height: 40.25rem;
-  bottom: -2.5rem;
+  bottom: -1.25rem;
   right: 0;
 }
 @media (max-width: 768px) {
@@ -788,7 +788,7 @@ template {
 .section__headline:after {
   content: url(../img/icons/малина1.png);
   position: absolute;
-  bottom: -6.5rem;
+  bottom: 6.5rem;
   left: 0;
 }
 @media (max-width: 480px) {
@@ -1083,7 +1083,7 @@ template {
 }
 @media (max-width: 768px) {
   .review__desc {
-    margin-bottom: 1rem;
+    margin-bottom: 1.625rem;
   }
 }
 .review__author {
@@ -1194,7 +1194,6 @@ template {
   border: 3px solid #DEE2BD;
 }
 .form__textarea {
-  width: 28.125;
   height: 9.5rem;
 }
 @media (max-width: 768px) {
@@ -1272,7 +1271,7 @@ template {
   left: 0;
   right: 0;
   background: #ffffff;
-  padding: 1.2rem 0;
+  padding: 1.25rem 0;
 }
 
 .footer-contacts {
