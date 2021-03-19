@@ -21,6 +21,7 @@
     width: rem(26px);
     height: rem(24px);
     z-index: 1000;
+    opacity: 0.7;
     &::before,
     &::after{
       content: "";
@@ -50,7 +51,10 @@
 .header-mobile-active{
     &::after{
       transform: rotate(45deg);
-      bottom: rem(8px);
+      bottom: rem(9px);
+      @include phone{
+        bottom: rem(11px);
+      }
     }
     &::before{
       transform: rotate(-45deg);
