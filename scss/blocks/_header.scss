@@ -16,30 +16,48 @@
     display: flex;
   }
   &__menu{
-    display: inline-flex;
+    display: block;
+    position: relative;
     width: rem(26px);
     height: rem(24px);
-    flex-direction: column;
-    justify-content: center;
-  }
-  &__item{
-    border-radius: rem(10px);
-    height: rem(4px);
-    background: $white;
-    position: relative;
-    &:before, &:after{
+    z-index: 1000;
+    &::before,
+    &::after{
       content: "";
-      border-radius:rem(10px);
-      width: 100%;
       position: absolute;
-      background: $white;
+      width: 100%;
       height: rem(4px);
+      background: $white;
+      transition: transform .3s;
+    }
+    &:before{
+      top: rem(0px);
     }
     &::after{
+      bottom: rem(0px);
+    }
+  }
+  &__item{
+    width: 100%;
+    height: rem(4px);
+    background: $white;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+  }
+}
+
+.header-mobile-active{
+    &::after{
+      transform: rotate(45deg);
       bottom: rem(8px);
     }
     &::before{
-      top: rem(8px);
+      transform: rotate(-45deg);
+      top: rem(9px);
     }
+  .header-mobile__item{
+    transform: scale(0);
+
   }
 }
