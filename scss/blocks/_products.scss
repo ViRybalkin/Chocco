@@ -1,0 +1,81 @@
+.products{
+  display: flex;
+  &__item{
+    display: flex;
+    @include tablets{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__col{
+    display: flex;
+    flex: 1;
+    margin-right: rem(50px);
+    @include tablets{
+      align-items: center;
+      justify-content: center;
+    }
+    &:last-child{
+      margin: 0;
+    }
+  }
+  &__info{
+    width: 83%;
+    @include tablets{
+      width: 75%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    @include phone{
+      width: 95%;
+    }
+  }
+  &__name{
+    color: $black;
+    margin-bottom: rem(22px);
+    @include tablets{
+      margin-bottom: 10px;
+    }
+    @include phone{
+      width: 80%;
+    }
+  }
+  &__desc{
+    margin-bottom: rem(22px);
+    @include tablets{
+      margin-bottom: rem(25px);
+    }
+  }
+  &__about{
+    display: flex;
+    margin-bottom: rem(22px);
+    @include tablets{
+      margin-right: rem(45px);
+      text-align: left;
+    }
+  }
+  &__include{
+    margin-right: rem(50px);
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__enters{
+    font-weight: bold;
+    color: $black;
+  }
+  &__order{
+    display: flex;
+    align-items: center;
+  }
+  &__price{
+    font-size: rem(60px);
+    margin-right: rem(50px);
+    font-weight: 300;
+    color: #151515;
+  }
+}

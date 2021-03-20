@@ -1,0 +1,20 @@
+.arrows{
+  &__item{
+    position: absolute;
+    display: block;
+    top: 50%;
+    @include tablets{
+    top: 28%;
+    }
+    @include phone{
+      top: 13%;
+    }
+  }
+  &-left{
+    left: 0%;
+  }
+  &-right{
+    right: 0%;
+    transform: rotate(-180deg);
+  }
+}
