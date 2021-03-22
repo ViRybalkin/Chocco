@@ -455,25 +455,25 @@ template {
 
 @font-face {
   font-family: "alegreya_sans";
-  src: url("../../Fonts/alegreyasans-regular-webfont.woff2") format("woff2");
+  src: url("../Fonts/alegreyasans-regular-webfont.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "alegreya_sans";
-  src: url("../../Fonts/alegreyasans-bold-webfont.woff2") format("woff2");
+  src: url("../Fonts/alegreyasans-bold-webfont.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "alegreya_sans";
-  src: url("../../Fonts/alegreyasans-light-webfont.woff2") format("woff2");
+  src: url("../Fonts/alegreyasans-light-webfont.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "alegreya_sans";
-  src: url("../../Fonts/alegreyasans-medium-webfont.woff2") format("woff2");
+  src: url("../Fonts/alegreyasans-medium-webfont.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
@@ -837,7 +837,7 @@ template {
 }
 .section__products::before {
   content: "";
-  background: url(../../img/icons/leaf-products.png) right bottom/contain no-repeat;
+  background: url(../img/icons/leaf-products.png) right bottom/contain no-repeat;
   position: absolute;
   width: 12.25rem;
   height: 28.125rem;
@@ -857,7 +857,7 @@ template {
 }
 .section__products:after {
   content: "";
-  background: url(../../img/icons/berry__products.png) right bottom/contain no-repeat;
+  background: url(../img/icons/berry__products.png) right bottom/contain no-repeat;
   position: absolute;
   width: 8.125rem;
   height: 7rem;
@@ -1004,7 +1004,7 @@ template {
   }
 }
 .benefits__item::before {
-  content: url(../../img/icons/circles.svg);
+  content: url(../img/icons/circles.svg);
   position: absolute;
   top: 3.75rem;
   right: 0;
@@ -1265,6 +1265,9 @@ template {
 }
 .form__input:focus {
   border: 3px solid #DEE2BD;
+}
+.form__error {
+  color: red;
 }
 .form__textarea {
   height: 9.5rem;

@@ -41,6 +41,9 @@
       border: 3px solid #DEE2BD;
     }
   }
+  &__error{
+    color: red;
+  }
   &__textarea{
     height: rem(152px);
     padding: rem(12px);

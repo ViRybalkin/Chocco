@@ -73,9 +73,11 @@
 
   function validate(element){
   if(!element.checkValidity()){
+    element.nextElementSibling.textContent = element.validationMessage;
     element.style.border = '1px solid red';
     return false;
   } else{
+    element.nextElementSibling.textContent = "";
     element.style.border = '3px solid #DEE2BD';
     return true;
   }

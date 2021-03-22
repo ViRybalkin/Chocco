@@ -70,7 +70,7 @@
   position: relative;
   &::before{
     content: "";
-    background: url(../../img/icons/leaf-products.png) right bottom / contain no-repeat;
+    background: url(../img/icons/leaf-products.png) right bottom / contain no-repeat;
     position: absolute;
     width: rem(196px);
     height: rem(450px);
@@ -86,7 +86,7 @@
   }
   &:after{
     content: "";
-    background: url(../../img/icons/berry__products.png)right bottom / contain no-repeat;
+    background: url(../img/icons/berry__products.png)right bottom / contain no-repeat;
     position: absolute;
     width: rem(130px);
     height: rem(112px);
