@@ -48,6 +48,7 @@
 .section__headline{
   background: url(../img/icons/узор-лист1.png) left center no-repeat;
   position: relative;
+  z-index: 1;
   @include tablets{
     background-position: left top 20%;
   }

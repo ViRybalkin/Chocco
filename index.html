@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/main.css">
   <title>Chocco</title>
 </head>
@@ -154,10 +155,14 @@
       <div class="container">
         <div class="arrows">
           <a href="#" class="arrows__item arrows-left">
-            <img src="./img/icons/arrow.svg" alt="">
+            <svg class="arrows__pic">
+              <use xlink:href="./img/icons/sprites.svg#arrows"></use>
+            </svg>
           </a>
           <a href="#" class="arrows__item arrows-right">
-            <img src="./img/icons/arrow.svg" alt="">
+            <svg class="arrows__pic">
+              <use xlink:href="./img/icons/sprites.svg#arrows"></use>
+            </svg>
           </a>
         </div>
         <div class="products">
@@ -236,7 +241,7 @@
                     </div>
                   </div>
                   <div class="products__order">
-                    <div class="products__price">140 ₽</div>
+                    <div class="products__price">140 <span>₽</span></div>
                     <a href="#" class="btn btn_color-green">Заказать</a>
                   </div>
                 </div>
@@ -452,7 +457,7 @@
         <nav class="menu menu--mobile">
           <ul class="menu__list">
             <li class="menu__item">
-              <a href="#" class="menu__link">О нас</a>
+              <a href="" class="menu__link">О нас</a>
             </li>
             <li class="menu__item">
               <a href="#" class="menu__link">Батончики</a>

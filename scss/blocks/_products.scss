@@ -12,6 +12,7 @@
     display: flex;
     flex: 1;
     margin-right: rem(50px);
+    align-items: center;
     @include tablets{
       align-items: center;
       justify-content: center;
@@ -74,8 +75,11 @@
   }
   &__price{
     font-size: rem(60px);
-    margin-right: rem(25px);
+    margin-right: rem(36px);
     font-weight: 300;
     color: #151515;
+    & span{
+      font-size: rem(40px);
+    }
   }
 }

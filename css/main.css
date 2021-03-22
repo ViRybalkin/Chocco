@@ -808,6 +808,7 @@ template {
 .section__headline {
   background: url(../img/icons/узор-лист1.png) left center no-repeat;
   position: relative;
+  z-index: 1;
 }
 @media (max-width: 768px) {
   .section__headline {
@@ -1448,10 +1449,16 @@ template {
 }
 .arrows-left {
   left: 0%;
+  transform: translateY(-50%);
 }
 .arrows-right {
   right: 0%;
-  transform: rotate(-180deg);
+  transform: translateY(-68%) rotate(-180deg);
+}
+.arrows__pic {
+  fill: none;
+  width: 15px;
+  height: 29px;
 }
 
 .products {
@@ -1471,6 +1478,7 @@ template {
   display: flex;
   flex: 1;
   margin-right: 3.125rem;
+  align-items: center;
 }
 @media (max-width: 768px) {
   .products__col {
@@ -1545,9 +1553,12 @@ template {
 }
 .products__price {
   font-size: 3.75rem;
-  margin-right: 1.5625rem;
+  margin-right: 2.25rem;
   font-weight: 300;
   color: #151515;
+}
+.products__price span {
+  font-size: 2.5rem;
 }
 
 .dropdown {
