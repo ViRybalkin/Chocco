@@ -111,6 +111,7 @@ input[type=reset] {
   max-width: 95%;
   width: 58.125rem;
   margin: 0 auto;
+  position: relative;
 }
 
 .hero__container {
@@ -1267,6 +1268,7 @@ template {
 }
 .form__textarea {
   height: 9.5rem;
+  padding: 0.75rem;
 }
 @media (max-width: 768px) {
   .form__textarea {
@@ -1476,9 +1478,6 @@ template {
 .products__col:last-child {
   margin: 0;
 }
-.products__info {
-  width: 83%;
-}
 @media (max-width: 768px) {
   .products__info {
     width: 75%;
@@ -1509,6 +1508,7 @@ template {
   }
 }
 .products__desc {
+  width: 83%;
   margin-bottom: 1.375rem;
 }
 @media (max-width: 768px) {
@@ -1518,7 +1518,7 @@ template {
 }
 .products__about {
   display: flex;
-  margin-bottom: 1.375rem;
+  margin-bottom: 0.6875rem;
 }
 @media (max-width: 768px) {
   .products__about {
@@ -1542,7 +1542,7 @@ template {
 }
 .products__price {
   font-size: 3.75rem;
-  margin-right: 3.125rem;
+  margin-right: 1.5625rem;
   font-weight: 300;
   color: #151515;
 }

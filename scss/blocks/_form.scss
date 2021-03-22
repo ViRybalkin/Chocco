@@ -38,11 +38,12 @@
      height: rem(36px);
     }
     &:focus{
-      border: 3px solid #DEE2BD;;
+      border: 3px solid #DEE2BD;
     }
   }
   &__textarea{
     height: rem(152px);
+    padding: rem(12px);
     @include tablets{
      height: rem(82px);
     }

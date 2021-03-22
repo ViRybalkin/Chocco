@@ -292,39 +292,41 @@
             <div class="form__row">
               <label for="" class="form__block">
                 <p class="form__name">Имя</p>
-                <input class="form__input" type="text" name="" id="">
+                <input class="form__input" type="text" id="name" name="name" required>
+                <div class="form__error"></div>
               </label>
 
               <label for="" class="form__block">
                 <p class="form__name">Телефон</p>
-                <input class="form__input" type="text" name="" id="">
+                <input class="form__input" type="text" id="phone" name="phone" required >
+                <div class="form__error"></div>
               </label>
             </div>
             <div class="form__row">
               <label for="" class="form__block">
                 <p class="form__name">Улица</p>
-                <input class="form__input" type="text" name="" id="">
+                <input class="form__input" type="text">
               </label>
             </div>
             <div class="form__row">
               <label for="" class="form__block">
                 <p class="form__name">Дом</p>
-                <input class="form__input" type="text" name="" id="">
+                <input class="form__input" type="text">
               </label>
 
               <label for="" class="form__block">
                 <p class="form__name">Корпус</p>
-                <input class="form__input" type="text" name="" id="">
+                <input class="form__input" type="text">
               </label>
 
               <label for="" class="form__block">
                 <p class="form__name">Квартира</p>
-                <input class="form__input" type="text" name="" id="">
+                <input class="form__input" type="text">
               </label>
 
               <label for="" class="form__block">
                 <p class="form__name">Этаж</p>
-                <input class="form__input" type="text" name="" id="">
+                <input class="form__input" type="text">
               </label>
             </div>
           </div>
@@ -332,7 +334,8 @@
             <div class="form__row">
               <label for="" class="form__block">
                 <p class="form__name">Коментарий</p>
-                <textarea class="form__input form__textarea" name="" id="" cols="30" rows="10"></textarea>
+                <textarea class="form__input form__textarea" name="comment" required ></textarea>
+                <div class="form__error"></div>
               </label>
             </div>
             <div class="form__controls">
@@ -357,7 +360,7 @@
               </div>
             </div>
             <div class="form__row form-btn">
-              <input type="submit" value="заказать" class="btn btn_color-green">
+              <input type="submit" value="заказать"  class="btn btn_color-green form__submit">
               <input type="reset" value="очистить" class="btn btn_color-transparent">
             </div>
           </div>
@@ -473,5 +476,6 @@
         </nav>
       </div>
       <script src="./Js/overlay.js"></script>
+      <script src="./Js/validate.js"></script>
   </body> 
 </html>
