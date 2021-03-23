@@ -3,6 +3,9 @@
   const send = document.querySelector('.form__submit')
   const phone = document.querySelector('#phone')
   const name = document.querySelector('#name')
+  const overlayMessage = document.querySelector('.overlay-form__message')
+  const overlayForm = document.querySelector('.overlay-form')
+  const closeForm = document.querySelector('.close-form')
 
 
   // Add validate for numbers //
@@ -41,24 +44,41 @@
     if(e.keyCode == 8 || e.keyCode == 37 || e.keyCode == 39){
       isControls = true;
     };
-
     if(!isLetter && !isControls){
       e.preventDefault()
     }
 });
 
 
-  //Add validate for form//
-  send.addEventListener('click',(e) => {
-    e.preventDefault();
-    if(validateForm(form)){
-    } else{
-    }
+//Add validate for form//
+send.addEventListener('click',(e) => {
+  e.preventDefault();
+  overlayForm.classList.add('overlay-form-active')
+  
+  if(validateForm(form)){
+    const data = {
+      name : form.elements.name.value,
+      phone : form.elements.phone.value,
+      comment : form.elements.comment.value,
+      to : form.elements.email.value
+    };
+    console.log(data);
+    
+    const xhr = new XMLHttpRequest();
+      xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail')
+      xhr.setRequestHeader('content-type', 'application/json');
+      xhr.send(JSON.stringify(data));
+      xhr.addEventListener('load', () => {
+        const text = JSON.parse(xhr.responseText)
+        const message = text.message
+        overlayMessage.textContent = message;
+      })
+    } 
   });
-
+  
   function validateForm(form){
     let valid = true;
-
+    
     if (!validate(form.elements.name)){
       valid = false;
     }
@@ -68,18 +88,24 @@
     if (!validate(form.elements.comment)){
       valid = false;
     }
+    if (!validate(form.elements.email)){
+      valid = false;
+    }
     return  valid;
   }
-
+  
   function validate(element){
-  if(!element.checkValidity()){
-    element.nextElementSibling.textContent = element.validationMessage;
-    element.style.border = '1px solid red';
-    return false;
-  } else{
-    element.nextElementSibling.textContent = "";
-    element.style.border = '3px solid #DEE2BD';
-    return true;
+    if(!element.checkValidity()){
+      element.style.border = '1px solid red';
+      return false;
+    } else{
+      element.style.border = '3px solid #DEE2BD';
+      return true;
+    }
   }
-}
+  closeForm.addEventListener('click', (e)=>{
+    e.preventDefault();
+    overlayForm.classList.remove('overlay-form-active')
+  })
 })();
+

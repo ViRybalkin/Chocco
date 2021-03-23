@@ -14,7 +14,32 @@
   align-items: center;
   opacity: 0;
   overflow: auto;
-  transition: all .3s ease;
+  transition: opacity .3s ease;
+}
+
+.overlay-form{
+  background: #333537;
+  display: none;
+  opacity: 0;
+  &-active{
+    display: flex;
+    opacity: 1;
+    right: 0;
+  }
+  &__message{
+    min-height: 50px;
+    text-align: center;
+  }
+  &__block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $white;
+    width: rem(309px);
+    height: rem(176px);
+
+  }
 }
 
 .menu--mobile{

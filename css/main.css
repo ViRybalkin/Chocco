@@ -1360,7 +1360,6 @@ template {
   font-size: 1.125rem;
 }
 .footer-contacts .contacts__link {
-  display: block;
   color: #497870;
 }
 @media (max-width: 480px) {
@@ -1413,7 +1412,31 @@ template {
   align-items: center;
   opacity: 0;
   overflow: auto;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.overlay-form {
+  background: #333537;
+  display: none;
+  opacity: 0;
+}
+.overlay-form-active {
+  display: flex;
+  opacity: 1;
+  right: 0;
+}
+.overlay-form__message {
+  min-height: 50px;
+  text-align: center;
+}
+.overlay-form__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  width: 19.3125rem;
+  height: 11rem;
 }
 
 .menu--mobile .menu__list {

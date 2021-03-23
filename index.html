@@ -310,7 +310,8 @@
             <div class="form__row">
               <label for="" class="form__block">
                 <p class="form__name">Улица</p>
-                <input class="form__input" type="text">
+                <input class="form__input" name="email" type="email" required>
+                <div class="form__error"></div>
               </label>
             </div>
             <div class="form__row">
@@ -453,7 +454,6 @@
         </ul>
       </nav> 
       <div class="overlay">
-        
         <nav class="menu menu--mobile">
           <ul class="menu__list">
             <li class="menu__item">
@@ -479,6 +479,12 @@
             </li>
           </ul>
         </nav>
+      </div>
+      <div class="overlay overlay-form ">
+        <div class="overlay-form__block">
+          <div class="overlay-form__message"></div>
+          <a href="#" class="btn btn_color-green close-form">Закрыть</a>
+        </div>
       </div>
       <script src="./Js/overlay.js"></script>
       <script src="./Js/validate.js"></script>

@@ -16,7 +16,6 @@
   .contacts{
     font-size: rem(18px);
     &__link{
-      display: block;
       color: $green;
       @include phone{
         margin-bottom: rem(18px);
