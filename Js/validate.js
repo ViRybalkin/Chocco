@@ -53,8 +53,6 @@
 //Add validate for form//
 send.addEventListener('click',(e) => {
   e.preventDefault();
-  overlayForm.classList.add('overlay-form-active')
-  
   if(validateForm(form)){
     const data = {
       name : form.elements.name.value,
@@ -71,6 +69,9 @@ send.addEventListener('click',(e) => {
         const text = JSON.parse(xhr.responseText)
         const message = text.message
         overlayMessage.textContent = message;
+        if(validateForm(form) == true){
+          overlayForm.classList.add('overlay-form-active')
+        }
       })
     } 
   });
