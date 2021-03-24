@@ -769,6 +769,10 @@ template {
   color: #292929;
 }
 
+.title__team {
+  margin-bottom: 3.125rem;
+}
+
 .section-hero {
   color: #ffffff;
   background: #61C4D9 url(../img/bg/узор1.png) right bottom no-repeat;
@@ -1659,5 +1663,105 @@ template {
 .dropdown:hover .dropdown__menu {
   opacity: 1;
   left: 100%;
+}
+
+@media (max-width: 768px) {
+  .team {
+    display: none;
+  }
+}
+.team-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .team-mobile {
+    display: flex;
+  }
+}
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .team__list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+.team__item {
+  width: calc((100% - 60px) / 4);
+  margin-right: 1.25rem;
+  max-height: 12.5rem;
+}
+.team__item:nth-child(4n) {
+  margin-right: 0;
+}
+@media (max-width: 768px) {
+  .team__item {
+    width: 40%;
+    margin-right: 0;
+    max-height: none;
+  }
+}
+@media (max-width: 480px) {
+  .team__item {
+    width: 60%;
+  }
+}
+.team__image {
+  margin-bottom: 1.25rem;
+}
+.team__name {
+  color: #292929;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 768px) {
+  .team__name {
+    margin-bottom: 0;
+  }
+  .team__name:last-child {
+    margin-bottom: 0;
+  }
+}
+.team__triangle {
+  margin-left: 10px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 8px solid #365A49;
+  transition: all 0.3s;
+}
+.team__triangle-active {
+  border-top: none;
+  border-bottom: 8px solid #365A49;
+}
+.team__wrap {
+  height: 0;
+  transition: height 0.3s;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .team__wrap {
+    margin-bottom: 1.875rem;
+  }
+}
+.team__desc {
+  text-align: center;
+}
+.team__position {
+  color: #292929;
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin-bottom: 0.3125rem;
 }
 /*# sourceMappingURL=main.css.map */

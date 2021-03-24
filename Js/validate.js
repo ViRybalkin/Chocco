@@ -60,9 +60,8 @@ send.addEventListener('click',(e) => {
       name : form.elements.name.value,
       phone : form.elements.phone.value,
       comment : form.elements.comment.value,
-      to : form.elements.email.value
+      to : 'my@mail.ru'
     };
-    console.log(data);
     
     const xhr = new XMLHttpRequest();
       xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail')
@@ -86,9 +85,6 @@ send.addEventListener('click',(e) => {
       valid = false;
     }
     if (!validate(form.elements.comment)){
-      valid = false;
-    }
-    if (!validate(form.elements.email)){
       valid = false;
     }
     return  valid;
