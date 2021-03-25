@@ -109,9 +109,13 @@ input[type=reset] {
 
 .container {
   max-width: 95%;
-  width: 58.125rem;
+  width: 930px;
   margin: 0 auto;
   position: relative;
+}
+
+.container-products {
+  width: 1150px;
 }
 
 .hero__container {
@@ -1403,7 +1407,7 @@ template {
 .overlay {
   position: fixed;
   display: flex;
-  top: -999px;
+  top: -9999px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -1425,7 +1429,7 @@ template {
 
 .overlay-form {
   background: #333537;
-  left: -999px;
+  left: -9999px;
   transition: opacity 0.4s;
   top: 0;
 }
@@ -1468,6 +1472,7 @@ template {
 .arrows__item {
   position: absolute;
   display: block;
+  z-index: 10;
   top: 50%;
 }
 @media (max-width: 768px) {
@@ -1496,9 +1501,18 @@ template {
 
 .products {
   display: flex;
+  overflow: hidden;
+}
+.products__list {
+  display: flex;
+  transition: all 1s;
+  position: relative;
+  width: 100%;
 }
 .products__item {
   display: flex;
+  width: 100%;
+  flex-shrink: 0;
 }
 @media (max-width: 768px) {
   .products__item {
@@ -1509,9 +1523,10 @@ template {
 }
 .products__col {
   display: flex;
-  flex: 1;
+  flex: 1 0 0;
   margin-right: 3.125rem;
   align-items: center;
+  padding-top: 5.3125rem;
 }
 @media (max-width: 768px) {
   .products__col {
@@ -1521,6 +1536,7 @@ template {
 }
 .products__col:last-child {
   margin: 0;
+  padding-top: 0;
 }
 @media (max-width: 768px) {
   .products__info {
@@ -1538,6 +1554,7 @@ template {
   }
 }
 .products__name {
+  width: 90%;
   color: #292929;
   margin-bottom: 1.375rem;
 }
@@ -1552,7 +1569,7 @@ template {
   }
 }
 .products__desc {
-  width: 83%;
+  width: 65%;
   margin-bottom: 1.375rem;
 }
 @media (max-width: 768px) {
@@ -1686,7 +1703,6 @@ template {
 }
 .team__list {
   display: flex;
-  flex-wrap: wrap;
 }
 @media (max-width: 768px) {
   .team__list {

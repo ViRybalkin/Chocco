@@ -109,6 +109,10 @@ cursor: pointer;
   position: relative; 
 }
 
+.container-products{
+  width: $containerWidth + 220px;
+}
+
 .hero__container{
   display: flex;
   flex-direction: column;

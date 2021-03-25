@@ -10,7 +10,6 @@
   }
   &__list{
     display: flex;
-    flex-wrap: wrap;
     @include tablets{
       flex-direction: column;
       align-items: center;
