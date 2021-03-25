@@ -1,11 +1,24 @@
 .review{
   display: flex;
-  @include tablets{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
+  position: relative;
+  &__item{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    @include tablets{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    &-active{
+      opacity: 1;
+      position: static;
+    }
   }
   &__avatar{
     width: rem(254px);
@@ -48,3 +61,4 @@
     color: $black;
   }
 }
+ 

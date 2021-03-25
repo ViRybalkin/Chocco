@@ -2,6 +2,7 @@
   text-align: center;
   @include phone{
     text-align: left;
+    align-items: center;
   }
   &__img-wrapper{
     display: inline-flex;
@@ -12,8 +13,8 @@
     background: #F2F5F4;
     position: relative;
     margin-bottom: rem(14px);
+    flex-shrink: 0;
     @include phone{
-      width: rem(256px);
       margin-right: rem(12px);
     }
   }
