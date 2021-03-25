@@ -1126,6 +1126,7 @@ template {
   right: 0;
   bottom: 0;
   opacity: 0;
+  transition: 0.3s;
 }
 @media (max-width: 768px) {
   .review__item {
@@ -1422,7 +1423,7 @@ template {
 .overlay {
   position: fixed;
   display: flex;
-  top: -9999px;
+  top: -950px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -1435,7 +1436,7 @@ template {
   align-items: center;
   opacity: 0;
   overflow: auto;
-  transition: all 0.4s;
+  transition: all 0.7s;
 }
 .overlay-active {
   top: 0;
