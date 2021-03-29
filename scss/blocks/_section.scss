@@ -107,6 +107,34 @@
   }
 }
 
+.section__team{
+  position: relative;
+  z-index: 2;
+  &::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background: url(../../img/icons/Raspberry.png) bottom left/ contain no-repeat;
+    width: rem(104px);
+    height: rem(104px);
+    bottom: rem(-50px);
+    left: rem(30px);
+  }
+}
+
+.section__menu{
+  background: url(../../img/bg/Menu_bg.png) center center/ cover no-repeat;
+  color: $white;
+  position: relative;
+}
+
+.menu__title{
+  position: absolute;
+  color: $white;
+  top: rem(120px);
+  left: rem(80px);
+}
+
 
 .section-reviews{
   position: relative;

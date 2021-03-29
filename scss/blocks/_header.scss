@@ -52,6 +52,7 @@
     &::after{
       transform: rotate(45deg);
       bottom: rem(9px);
+      
       @include phone{
         bottom: rem(11px);
       }

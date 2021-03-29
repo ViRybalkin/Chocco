@@ -885,6 +885,34 @@ template {
   }
 }
 
+.section__team {
+  position: relative;
+  z-index: 2;
+}
+.section__team::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url(../../img/icons/Raspberry.png) bottom left/contain no-repeat;
+  width: 6.5rem;
+  height: 6.5rem;
+  bottom: -3.125rem;
+  left: 1.875rem;
+}
+
+.section__menu {
+  background: url(../../img/bg/Menu_bg.png) center center/cover no-repeat;
+  color: #ffffff;
+  position: relative;
+}
+
+.menu__title {
+  position: absolute;
+  color: #ffffff;
+  top: 7.5rem;
+  left: 5rem;
+}
+
 .section-reviews {
   position: relative;
   background: url(../img/icons/review-berry2.png) right top/contain no-repeat;
@@ -1801,5 +1829,67 @@ template {
   font-size: 1.125rem;
   font-weight: 400;
   margin-bottom: 0.3125rem;
+}
+
+.menu-acco {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.menu-acco__list {
+  display: flex;
+}
+.menu-acco__item {
+  display: flex;
+}
+.menu-acco__item-active > .menu-acco__text {
+  padding: 30px 80px 0 40px;
+  width: 27.5rem;
+  opacity: 1;
+  overflow: hidden;
+  background: rgba(51, 53, 55, 0.9);
+}
+@media (max-width: 768px) {
+  .menu-acco__item-active > .menu-acco__text {
+    width: 100%;
+    padding: 30px 30px 0 30px;
+  }
+}
+.menu-acco__link {
+  position: relative;
+  width: 102px;
+  height: 100%;
+}
+.menu-acco__link-milk {
+  background: url(../../img/content/Menu_slide1.png) center center/cover no-repeat;
+}
+.menu-acco__link-fruit {
+  background: url(../../img/content/Menu_slide2.png) center center/cover no-repeat;
+}
+.menu-acco__link-berries {
+  background: url(../../img/content/Menu_slide3.png) center center/cover no-repeat;
+}
+@media (max-width: 480px) {
+  .menu-acco__link {
+    width: 5.625rem;
+  }
+}
+.menu-acco__name {
+  position: absolute;
+  left: 50%;
+  bottom: -1.1875rem;
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: 0 0;
+  white-space: nowrap;
+  font-size: 48px;
+}
+.menu-acco__text {
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+  background: rgba(51, 53, 55, 0.9);
+  transition: 1s;
 }
 /*# sourceMappingURL=main.css.map */
