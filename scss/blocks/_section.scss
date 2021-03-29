@@ -114,7 +114,7 @@
     content: "";
     display: block;
     position: absolute;
-    background: url(../../img/icons/Raspberry.png) bottom left/ contain no-repeat;
+    background: url(../img/icons/Raspberry.png) bottom left/ contain no-repeat;
     width: rem(104px);
     height: rem(104px);
     bottom: rem(-50px);
@@ -123,7 +123,7 @@
 }
 
 .section__menu{
-  background: url(../../img/bg/Menu_bg.png) center center/ cover no-repeat;
+  background: url(../img/bg/Menu_bg.png) center center/ cover no-repeat;
   color: $white;
   position: relative;
 }

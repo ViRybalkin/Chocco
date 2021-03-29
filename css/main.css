@@ -893,7 +893,7 @@ template {
   content: "";
   display: block;
   position: absolute;
-  background: url(../../img/icons/Raspberry.png) bottom left/contain no-repeat;
+  background: url(../img/icons/Raspberry.png) bottom left/contain no-repeat;
   width: 6.5rem;
   height: 6.5rem;
   bottom: -3.125rem;
@@ -901,7 +901,7 @@ template {
 }
 
 .section__menu {
-  background: url(../../img/bg/Menu_bg.png) center center/cover no-repeat;
+  background: url(../img/bg/Menu_bg.png) center center/cover no-repeat;
   color: #ffffff;
   position: relative;
 }
@@ -1863,13 +1863,13 @@ template {
   height: 100%;
 }
 .menu-acco__link-milk {
-  background: url(../../img/content/Menu_slide1.png) center center/cover no-repeat;
+  background: url(../img/content/Menu_slide1.png) center center/cover no-repeat;
 }
 .menu-acco__link-fruit {
-  background: url(../../img/content/Menu_slide2.png) center center/cover no-repeat;
+  background: url(../img/content/Menu_slide2.png) center center/cover no-repeat;
 }
 .menu-acco__link-berries {
-  background: url(../../img/content/Menu_slide3.png) center center/cover no-repeat;
+  background: url(../img/content/Menu_slide3.png) center center/cover no-repeat;
 }
 @media (max-width: 480px) {
   .menu-acco__link {
