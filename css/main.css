@@ -982,7 +982,6 @@ template {
 
 .section-map {
   position: relative;
-  background: url(../img/bg/map.png) center center/cover no-repeat;
 }
 
 .headline {
@@ -1402,6 +1401,7 @@ template {
   right: 0;
   background: #ffffff;
   padding: 1.25rem 0;
+  z-index: 2;
 }
 
 .footer-contacts {
