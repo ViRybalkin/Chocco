@@ -170,7 +170,7 @@
             <li class="products__item">
               <div class="products__col">
                 <div class="products__image">
-                  <img src="./img/bg/Товар.png" alt="" class="products__pic">
+                  <img src="./img/content/Товар.png" alt="" class="products__pic">
                 </div>
               </div>
               <div class="products__col">
@@ -249,7 +249,7 @@
             <li class="products__item">
               <div class="products__col">
                 <div class="products__image">
-                  <img src="./img/bg/Товар2.png" alt="" class="products__pic">
+                  <img src="./img/content/Товар2.png" alt="" class="products__pic">
                 </div>
               </div>
               <div class="products__col">
@@ -752,6 +752,34 @@
         </ul>
       </div>
     </section>
+    <section class="section section-player">
+      <div class="container container-player">
+        <h1 class="section__title">как мы работаем</h1>
+        <div class="player">
+          <div class="player__wrapper">
+            <video class="player__video" poster="./img/bg/player.png" preload="auto">
+              <source src="./video/video.mp4" type="video/mp4"> 
+            </video>
+            <svg class="player__play-icon">
+              <use xlink:href="./img/icons/sprites.svg#play"></use>
+            </svg>
+            </div>
+            <div class="player__controls">
+              <button class="player__start"></button>
+              <div class="player__playback">
+                <div class="player__playback-line"></div>
+                <div class="player__playback-button"></div>
+              </div>
+              <svg class="player__volume-icon">
+                <use xlink:href="./img/icons/sprites.svg#volume"></use>
+              </svg>
+              <div class="player__volume">
+                  <div class="player__volume-button"></div> 
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
     <section class="section section-form">
       <div class="container container-form">
         <h2 class="section__title">закажите доставку</h2>
@@ -948,6 +976,7 @@
           <a href="#" class="btn btn_color-green close-form">Закрыть</a>
         </div>
       </div>
+      <script src="https://www.youtube.com/iframe_api"></script>
       <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
       <script src="./Js/map.js"></script>
       <script src="./Js/overlay.js"></script>
@@ -956,5 +985,6 @@
       <script src="./Js/slider.js"></script>
       <script src="./Js/tabs.js"></script>
       <script src="./Js/menu-accardeon.js"></script>
+      <script src="./Js/player.js"></script>
   </body> 
 </html>

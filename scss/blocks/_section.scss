@@ -140,6 +140,7 @@
   position: relative;
   background: url(../img/icons/review-berry2.png) right top/ contain no-repeat;
   background-size: rem(136px) rem(78px) ;
+  z-index: 3;
   &::before{
     content: "";
     background:url(../img/icons/review-bg1.png)right bottom/ contain no-repeat;
@@ -170,6 +171,22 @@
   }
 }
 
+.section-player{
+  position: relative;
+  background: #F8FAF9 ;
+  &::before{
+    content: "";
+    position: absolute;
+    background: url(../../img/icons/video-leaf.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: rem(196px);
+    height: rem(264px);
+    bottom: -10%;
+    right: 0;
+  }
+}
+
 .section-form{
   background: 
   url(../img/icons/berry-form.png) left 5% bottom 10%  no-repeat,
@@ -193,7 +210,6 @@
     }
   }
 }
-
 .section-map{
   position: relative;
 }

@@ -9,6 +9,7 @@
   }
   &__item{
     display: flex;
+    justify-content: flex-end;
     &-active{
       >.menu-acco__text{
         padding: 30px 80px 0 40px;

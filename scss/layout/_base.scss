@@ -81,6 +81,9 @@ input,button,textarea{
   outline: none;
   border: none;
 }
+button{
+  background: transparent;
+}
 
 input[type="submit"],
 input[type="reset"]{
@@ -113,12 +116,35 @@ cursor: pointer;
   width: $containerWidth + 220px;
 }
 
+.container-player{
+  position: relative;
+  &:after,
+  &::before{
+    content: "";
+    position: absolute;
+  }
+  &::after{
+    background: url(../../img/icons/video-leaf1.png) no-repeat;
+    width:rem(72px);
+    height:rem(135px);
+    bottom: -20%;
+    left: -10%;
+  }
+  &::before{
+    background: url(../../img/icons/video-leaf2.png)no-repeat;
+    width:rem(90px);
+    height:rem(77px);
+    top: 4%;
+    right: -20%;
+  }
+}
+
 .hero__container{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  background: url(../img/bg/Батончики.png) right center / 50% auto no-repeat;
+  background: url(../img/content/Батончики.png) right center / 50% auto no-repeat;
   padding: rem(20px) 0 rem(50px); 
   @include tablets{
     background: none;
