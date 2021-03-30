@@ -11,7 +11,7 @@
 <body>
   <div class="wrapper">
     <main class="main-content">
-      <section class="section section-hero">
+      <section class="section section-hero" data-section-id="hero">
       <div class="container hero__container">
         <header class="header">
           <div class="logo">
@@ -22,25 +22,25 @@
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="#" class="menu__link">О нас</a>
+                <a href="#" class="menu__link"data-scroll-to="headline">О нас</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Батончики</a>
+                <a href="#" class="menu__link" data-scroll-to="products">Батончики</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Команда</a>
+                <a href="#" class="menu__link" data-scroll-to="team">Команда</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Меню</a>
+                <a href="#" class="menu__link" data-scroll-to="menu">Меню</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Отзывы</a>
+                <a href="#" class="menu__link" data-scroll-to="reviews">Отзывы</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Как мы работаем</a>
+                <a href="#" class="menu__link" data-scroll-to="player">Как мы работаем</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Контакты</a>
+                <a href="#" class="menu__link" data-scroll-to="map">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -100,7 +100,7 @@
         </div>
       </div>
     </section>
-    <section class="section section__headline" >
+    <section class="section section__headline"data-section-id="headline" >
       <div class="container container-headline">
         <div class="headline" >
           <h2  class="section__title headline__title">почему chocco?</h2>
@@ -151,7 +151,7 @@
         </ul>
       </div>
     </section>
-    <section class="section section__products">
+    <section class="section section__products"data-section-id="product">
       <div class="container container-products ">
         <div class="arrows">
           <a href="#" class="arrows__item arrows-left">
@@ -328,7 +328,7 @@
             <li class="products__item">
               <div class="products__col">
                 <div class="products__image">
-                  <img src="./img/bg/Товар2.png" alt="" class="products__pic">
+                  <img src="./img/content/Товар2.png" alt="" class="products__pic">
                 </div>
               </div>
               <div class="products__col">
@@ -407,7 +407,7 @@
             <li class="products__item">
               <div class="products__col">
                 <div class="products__image">
-                  <img src="./img/bg/Товар2.png" alt="" class="products__pic">
+                  <img src="./img/content/Товар2.png" alt="" class="products__pic">
                 </div>
               </div>
               <div class="products__col">
@@ -487,7 +487,7 @@
         </div>
       </div>
     </section>
-    <section class="section section__team">
+    <section class="section section__team"data-section-id="team">
       <div class="container">
         <h1 class="section__title title__team">Команда</h1>
         <div class="team">
@@ -653,7 +653,7 @@
         </div>
       </div>
     </section>
-    <section class="section section__menu">
+    <section class="section section__menu"data-section-id="menu">
       <h1 class="section__title menu__title">Меню</h1>
       <div class="menu-acco">
         <ul class="menu-acco__list">
@@ -684,7 +684,7 @@
         </ul>
       </div>
     </section>
-    <section class="section section-reviews">
+    <section class="section section-reviews"data-section-id="reviews">
       <div class="container">
         <h2 class="section__title">Отзывы</h2>
         <div class="review__wrapper">
@@ -752,7 +752,7 @@
         </ul>
       </div>
     </section>
-    <section class="section section-player">
+    <section class="section section-player"data-section-id="player">
       <div class="container container-player">
         <h1 class="section__title">как мы работаем</h1>
         <div class="player">
@@ -780,7 +780,7 @@
           </div>
         </div>
     </section>
-    <section class="section section-form">
+    <section class="section section-form"data-section-id="form">
       <div class="container container-form">
         <h2 class="section__title">закажите доставку</h2>
         <form class="form">
@@ -863,7 +863,7 @@
         </form>
       </div>
     </section>
-    <section class="section section-map" id="map">
+    <section class="section section-map" id="map"data-section-id="map">
       <footer class="footer">
         <div class="container">
           <div class="footer-contacts">
@@ -947,25 +947,25 @@
         <nav class="menu menu--mobile">
           <ul class="menu__list">
             <li class="menu__item">
-              <a href="" class="menu__link">О нас</a>
+              <a href="" class="menu__link" data-scroll-to="headline">О нас</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Батончики</a>
+              <a href="#" class="menu__link"data-scroll-to="product">Батончики</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Команда</a>
+              <a href="#" class="menu__link"data-scroll-to="team">Команда</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Меню</a>
+              <a href="#" class="menu__link"data-scroll-to="menu">Меню</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Отзывы</a>
+              <a href="#" class="menu__link"data-scroll-to="reviews">Отзывы</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Как мы работаем</a>
+              <a href="#" class="menu__link"data-scroll-to="player">Как мы работаем</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Контакты</a>
+              <a href="#" class="menu__link"data-scroll-to="map">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -986,5 +986,6 @@
       <script src="./Js/tabs.js"></script>
       <script src="./Js/menu-accardeon.js"></script>
       <script src="./Js/player.js"></script>
+      <script src="./Js/onepagescroll.js"></script>
   </body> 
 </html>

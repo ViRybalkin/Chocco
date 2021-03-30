@@ -2,16 +2,37 @@ headerMenu = document.querySelector('.header-mobile__menu');
 overlay = document.querySelector('.overlay');
 body = document.body;
 
+
 headerMenu.addEventListener('click', e =>{
   e.preventDefault()
   headerMenu.classList.toggle('header-mobile-active')
   if(headerMenu.classList.contains('header-mobile-active')){
     overlay.classList.add('overlay-active')
-    body.style.overflow = 'hidden';
+
   }
   else{
     overlay.classList.remove('overlay-active')
-    body.style.overflow = 'visible';
   }
 })
+
+overlay.addEventListener('click',e =>{
+  e.preventDefault();
+  const target = e.target;
+  const dataValue = target.dataset.scrollTo;
+  console.log(dataValue);
+  if(target.classList.contains('menu__link')){
+    overlay.classList.remove('overlay-active')
+    headerMenu.classList.remove('header-mobile-active')
+    scrollToSection(dataValue);
+  }
+});
+
+const scrollToSection = (attr) =>{
+  const elem = document.querySelector(`[data-section-id = ${attr}]`);
+  window.scroll({
+    left: 0,
+    top: elem.offsetTop,
+    behavior: 'smooth'
+  })
+}
 

@@ -18,7 +18,7 @@ body{
   line-height: 1.42;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
-  overflow-x: hidden;
+  overflow: hidden;
   color: black;
   height: 100%;
   position: relative;
@@ -103,6 +103,7 @@ cursor: pointer;
 
 .main-content{
   flex: 1;
+  transition: ease-out 0.5s;
 }
 
 .container{
