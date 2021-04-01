@@ -127,14 +127,14 @@ cursor: pointer;
     position: absolute;
   }
   &::after{
-    background: url(../../img/icons/video-leaf1.png) no-repeat;
+    background: url(../img/icons/video-leaf1.png) no-repeat;
     width:rem(72px);
     height:rem(135px);
     bottom: -20%;
     left: -10%;
   }
   &::before{
-    background: url(../../img/icons/video-leaf2.png)no-repeat;
+    background: url(../img/icons/video-leaf2.png)no-repeat;
     width:rem(90px);
     height:rem(77px);
     top: 4%;

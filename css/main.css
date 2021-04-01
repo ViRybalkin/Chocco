@@ -133,14 +133,14 @@ input[type=reset] {
   position: absolute;
 }
 .container-player::after {
-  background: url(../../img/icons/video-leaf1.png) no-repeat;
+  background: url(../img/icons/video-leaf1.png) no-repeat;
   width: 4.5rem;
   height: 8.4375rem;
   bottom: -20%;
   left: -10%;
 }
 .container-player::before {
-  background: url(../../img/icons/video-leaf2.png) no-repeat;
+  background: url(../img/icons/video-leaf2.png) no-repeat;
   width: 5.625rem;
   height: 4.8125rem;
   top: 4%;
@@ -998,7 +998,7 @@ template {
 .section-player::before {
   content: "";
   position: absolute;
-  background: url(../../img/icons/video-leaf.png);
+  background: url(../img/icons/video-leaf.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 12.25rem;

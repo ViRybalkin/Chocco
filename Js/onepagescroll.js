@@ -102,14 +102,16 @@ $(window).on('wheel', e => {
 $(window).on('keydown', e => {
   const tagName = e.target.tagName.toLowerCase();
   const userTyping = tagName === "input" || tagName === "textarea"
-
+  console.log(e.keyCode);
   if (userTyping) return;
     switch (e.keyCode) {
-      case 38, 87:
+      case 38:
+      case 87:
         scroll('prev')
         break;
 
-      case 40, 83:
+      case 40:
+      case 83:
         scroll('next')
         break;
     }
@@ -140,3 +142,4 @@ if (isMobile){
     },
   });
 }
+
