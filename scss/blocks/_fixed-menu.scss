@@ -3,6 +3,17 @@
   top: 23%;
   right: 3%;
   z-index: $z-fixed-menu;
+  &__list{
+    &-dark .fixed-menu__link{
+      color: $black;
+    }
+    &-dark .fixed-menu__link:before{
+      background: $black;
+    }
+    &-dark .fixed-menu__item-active .fixed-menu__link{
+      border-color: $black;
+    }
+  }
   &__item{
     margin-bottom: rem(6px);
     &-active{
