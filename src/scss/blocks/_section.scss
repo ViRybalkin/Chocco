@@ -21,7 +21,7 @@
 
 .section-hero{
   color: $white;
-  background: #61C4D9 url(./img/bg/узор1.png) right bottom no-repeat;
+  background: #61C4D9 url( img/bg/узор1.png) right bottom no-repeat;
   position: relative;
   height: 100%;
   @include tablets{
@@ -29,7 +29,7 @@
   }
   &:before{
     position: absolute;
-    content: url(./img/icons/Лист.png);
+    content: url(img/icons/Лист.png);
     bottom: rem(-40px);
     left: 2%;
     @include tablets{
@@ -39,7 +39,7 @@
   &::after{
     position: absolute;
     content: "";
-    background: url(./img/icons/comp.png) center center/ 100% auto no-repeat;
+    background: url( img/icons/comp.png) center center/ 100% auto no-repeat;
     width: rem(520px);
     height: rem(644px);
     bottom: rem(-20px);
@@ -51,7 +51,7 @@
 }
 
 .section__headline{
-  background: url(./img/icons/узор-лист1.png) left center no-repeat;
+  background: url( img/icons/узор-лист1.png) left center no-repeat;
   position: relative;
   z-index: 1;
   @include tablets{
@@ -61,7 +61,7 @@
   background: none;
   }
   &:after{
-    content: url(./img/icons/малина1.png);
+    content: url( img/icons/малина1.png);
     position: absolute;
     bottom: rem(-104px);
     left: 0;
@@ -76,7 +76,7 @@
   position: relative;
   &::before{
     content: "";
-    background: url(./img/icons/leaf-products.png) right bottom / contain no-repeat;
+    background: url( img/icons/leaf-products.png) right bottom / contain no-repeat;
     position: absolute;
     width: rem(196px);
     height: rem(450px);
@@ -92,7 +92,7 @@
   }
   &:after{
     content: "";
-    background: url(./img/icons/berry__products.png)right bottom / contain no-repeat;
+    background: url( img/icons/berry__products.png)right bottom / contain no-repeat;
     position: absolute;
     width: rem(130px);
     height: rem(112px);
@@ -115,7 +115,7 @@
     content: "";
     display: block;
     position: absolute;
-    background: url(./img/icons/Raspberry.png) bottom left/ contain no-repeat;
+    background: url( img/icons/Raspberry.png) bottom left/ contain no-repeat;
     width: rem(104px);
     height: rem(104px);
     bottom: rem(-50px);
@@ -124,7 +124,7 @@
 }
 
 .section__menu{
-  background: url(./img/bg/Menu_bg.png) center center/ cover no-repeat;
+  background: url( img/bg/Menu_bg.png) center center/ cover no-repeat;
   color: $white;
   position: relative;
 }
@@ -139,12 +139,12 @@
 
 .section-reviews{
   position: relative;
-  background: url(./img/icons/review-berry2.png) right top/ contain no-repeat;
+  background: url( img/icons/review-berry2.png) right top/ contain no-repeat;
   background-size: rem(136px) rem(78px) ;
   z-index: 3;
   &::before{
     content: "";
-    background:url(./img/icons/review-bg1.png)right bottom/ contain no-repeat;
+    background:url( img/icons/review-bg1.png)right bottom/ contain no-repeat;
     width: rem(100px);
     height: rem(320px);
     position: absolute;
@@ -158,7 +158,7 @@
   }
   &::after{
     content: "";
-    background:url(./img/icons/review-berry.png) right bottom / contain  no-repeat;
+    background:url( img/icons/review-berry.png) right bottom / contain  no-repeat;
     width: rem(136px);
     height: rem(192px);
     position: absolute;
@@ -178,7 +178,7 @@
   &::before{
     content: "";
     position: absolute;
-    background: url(./img/icons/video-leaf.png);
+    background: url( img/icons/video-leaf.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: rem(196px);
@@ -190,15 +190,15 @@
 
 .section-form{
   background: 
-  url(./img/icons/berry-form.png) left 5% bottom 10%  no-repeat,
-  url(./img/icons/laef-form.png) right 5% bottom 10%  no-repeat,
-  url(./img/bg/form-bg.png) center center / cover no-repeat;
+  url( img/icons/berry-form.png) left 5% bottom 10%  no-repeat,
+  url( img/icons/laef-form.png) right 5% bottom 10%  no-repeat,
+  url( img/bg/form-bg.png) center center / cover no-repeat;
   color: $darkgreen;
   @include tablets{
-    background:url(./img/bg/form-bg.png) center center /cover no-repeat ;
+    background:url( img/bg/form-bg.png) center center /cover no-repeat ;
   }
   @include phone{
-    background-image:url(./img/bg/form-bg.png) center center /cover no-repeat ;
+    background-image:url( img/bg/form-bg.png) center center /cover no-repeat ;
   }
   .section__title{
     color: $darkgreen;
