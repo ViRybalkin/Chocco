@@ -70,75 +70,88 @@ const transition = sectionEq => {
     setTimeout(() => {
       inScroll = false;
       resetActiveClass(menuItems,sectionEq,'fixed-menu__item-active')
-    }, 700);
+    }, 500);
 };
 
-const scroll = direction => {
+const viewportScroller = () => {
   const activeSection = section.filter('.section-active');
   const nextSection = activeSection.next()
   const prevSection = activeSection.prev()
 
-  if (direction === 'next' && nextSection.length) {
-    transition(nextSection.index())
-  }
 
-  if (direction === 'prev' && prevSection.length) {
-    transition(prevSection.index())
+  return{
+    next(){
+      if (nextSection.length) {
+        transition(nextSection.index())
+      }
+    },
+    prev(){
+      if (prevSection.length) {
+        transition(prevSection.index())
+      }
+    }
   }
 };
 
 $(window).on('wheel', e => {
   const deltaY = e.originalEvent.deltaY;
+  const scroller = viewportScroller()
 
   if (deltaY > 0) {
-    scroll('next')
+    scroller.next()
   }
 
   if (deltaY < 0) {
-    scroll('prev')
+    scroller.prev()
   }
 });
 
 $(window).on('keydown', e => {
   const tagName = e.target.tagName.toLowerCase();
-  const userTyping = tagName === "input" || tagName === "textarea"
+  const userTyping = tagName === "input" || tagName === "textarea";
+  const scroller = viewportScroller()
   if (userTyping) return;
     switch (e.keyCode) {
       case 38:
       case 87:
-        scroll('prev')
+        scroller.prev()
         break;
 
       case 40:
       case 83:
-        scroll('next')
+        scroller.next()
         break;
     }
 });
 
-$('wrapper').on('touchmove',e => e.preventDefault())
+$('.wrapper').on('touchmove',e => e.preventDefault())
 
-$('[data-scroll-to]').click(e => {
+$('[data-scroll-to]').click((e) => {
   e.preventDefault()
 
   const $this = $(e.currentTarget);
   const target = $this.attr('data-scroll-to')
   const reqSection = $(`[data-section-id = ${target}]`);
-
   transition(reqSection.index())
 });
 
-
-if (isMobile){
+if(isMobile){
   $("body").swipe( {
-    swipe:function(event,direction,) {
-      const scroller = scroll();
-      let scrollDirection = "";
-      if(direction === 'up') scrollDirection = 'next';
-      if(direction === 'down') scrollDirection = 'prev';
-      // alert(direction);
-      scroller[scrollDirection]();
+    swipe:function(
+      event,
+      direction,
+      ) {
+        const scroller = viewportScroller()
+        let scrollDirection = '';
+        if (direction === 'up'){
+          scrollDirection = 'next'
+        }
+        if (direction === 'down'){
+          scrollDirection = 'prev'
+        }
+        scroller[scrollDirection]()
     },
   });
 }
+
 
