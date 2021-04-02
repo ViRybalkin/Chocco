@@ -1,0 +1,29 @@
+.review__wrapper{
+  background: #F8FAF9 url(../img/bg/review-bg.png) right top 13% no-repeat;
+  padding: rem(42px) rem(36px);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: rem(16px);
+  @include tablets{
+    padding: rem(40px) rem(24px) 0;
+    background-position: right top;
+  }
+  @include tablets{
+    padding-top: rem(56px);
+    background: #F8FAF9;
+  }
+  &::after{
+    content: "";
+    width: rem(82px);
+    height: rem(82px);
+    border-radius: 50%;
+    background: $white;
+    position: absolute;
+    top: rem(-60px);
+    left: 50%;
+    transform: translateX(-50%);
+    @include phone{
+      display: none;
+    }
+  }
+}

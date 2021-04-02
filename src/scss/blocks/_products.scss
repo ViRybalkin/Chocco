@@ -1,0 +1,97 @@
+.products{
+  display: flex;
+  overflow: hidden;
+  &__list{
+    display: flex;
+    transition: all 1s;
+    position: relative;
+    width: 100%;
+  }
+  &__item{
+    display: flex;
+    width: 100%;
+    flex-shrink: 0;
+    @include tablets{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__col{
+    display: flex;
+    flex: 1 0 0;
+    margin-right: rem(50px);
+    align-items: center;
+    padding-top: rem(85px);
+    @include tablets{
+      align-items: center;
+      justify-content: center;
+    }
+    &:last-child{
+      margin: 0;
+      padding-top: 0;
+    }
+  }
+  &__info{
+    @include tablets{
+      width: 75%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    @include phone{
+      width: 95%;
+    }
+  }
+  &__name{
+    width: 90%;
+    color: $black;
+    margin-bottom: rem(22px);
+    @include tablets{
+      margin-bottom: 10px;
+    }
+    @include phone{
+      width: 80%;
+    }
+  }
+  &__desc{
+    width: 65%;
+    margin-bottom: rem(22px);
+    @include tablets{
+      margin-bottom: rem(25px);
+    }
+  }
+  &__about{
+    display: flex;
+    margin-bottom: rem(11px);
+    @include tablets{
+      margin-right: rem(45px);
+      text-align: left;
+    }
+  }
+  &__include{
+    margin-right: rem(50px);
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__enters{
+    font-weight: bold;
+    color: $black;
+  }
+  &__order{
+    display: flex;
+    align-items: center;
+  }
+  &__price{
+    font-size: rem(60px);
+    margin-right: rem(36px);
+    font-weight: 300;
+    color: #151515;
+    & span{
+      font-size: rem(40px);
+    }
+  }
+}
