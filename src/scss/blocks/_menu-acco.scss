@@ -29,13 +29,13 @@
     width:102px;
     height: 100%;
     &-milk{
-      background: url(../img/content/Menu_slide1.png)center center/ cover no-repeat;
+      background: url(./img/content/Menu_slide1.png)center center/ cover no-repeat;
     }
     &-fruit{
-      background: url(../img/content/Menu_slide2.png)center center/ cover no-repeat;
+      background: url(./img/content/Menu_slide2.png)center center/ cover no-repeat;
     }
     &-berries{
-      background: url(../img/content/Menu_slide3.png)center center/ cover no-repeat;
+      background: url(./img/content/Menu_slide3.png)center center/ cover no-repeat;
     }
     @include phone{
       width: rem(90px);
