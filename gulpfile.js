@@ -11,10 +11,12 @@ const cleanCSS = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
+const gulpIf = require('gulp-if');
+const env = process.env.NODE_ENV
 
 
 task( 'clean', () =>{
-  return src( 'dist/**/*', { read: false }).pipe( rm() )
+  return src( 'dist/**/*', { read: false }).pipe(rm())
 })
 
 task ('copy:html', () =>{
@@ -47,17 +49,18 @@ const styles = [
 
 task ('styles', () =>{
   return src(styles)
-  .pipe(sourcemaps.init())
+  .pipe(gulpIf(env === 'dev',sourcemaps.init()) )
   .pipe(concat('main.min.scss'))
   .pipe(sassGlob())
   .pipe(sass().on('error', sass.logError))
-  .pipe(autoprefixer({
+  .pipe(gulpIf(env === 'dev',
+  autoprefixer({
     browsers: ["last 2 versions"],
     cascade: false
-  }))
-  .pipe(gcmq())
-  .pipe(cleanCSS())
-  .pipe(sourcemaps.write())
+  })))
+  .pipe(gulpIf(env === 'prod',gcmq()))
+  .pipe(gulpIf(env === 'prod',cleanCSS()))
+  .pipe(gulpIf(env === 'dev',sourcemaps.write()))
   .pipe(dest('dist'))
   .pipe(reload({ stream: true }));
 
@@ -72,13 +75,13 @@ const libs = [
 
 task('scripts', () => {
   return src(libs)
-    .pipe(sourcemaps.init())
+    .pipe(gulpIf(env === 'dev',sourcemaps.init()))
     .pipe(concat('main.min.js',{newLine : ';'}))
-    .pipe(babel({
+    .pipe(gulpIf(env === 'prod', babel({
       presets: ['@babel/env']
-    }))
-    .pipe(uglify())
-    .pipe(sourcemaps.write())
+    })))
+    .pipe(gulpIf(env === 'prod',uglify()))
+    .pipe(gulpIf( env === 'dev', sourcemaps.write()))
     .pipe(dest('dist'))
     .pipe(reload({ stream: true }));
 
@@ -94,10 +97,22 @@ task('server', function() {
 });
 
 
-watch('src/scss/**/*.scss', series('styles'));
-watch('src/*.html', series('copy:html'));
-watch('src/*.html', series('copy:content'));
-watch('src/*.html', series('copy:video'));
-watch('src/*.html', series('copy:fonts'));
-watch('src/Js/*.js', series('scripts'));
-task('default',series('clean',parallel('copy:html','copy:content','copy:video','copy:fonts','styles','scripts'),'server'))
+task('watch', () =>{
+  watch('src/scss/**/*.scss', series('styles'));
+  watch('src/*.html', series('copy:html'));
+  watch('src/*.html', series('copy:content'));
+  watch('src/*.html', series('copy:video'));
+  watch('src/*.html', series('copy:fonts'));
+  watch('src/Js/*.js', series('scripts'));
+})
+
+task('default',
+series(
+  'clean',
+parallel('copy:html','copy:content','copy:video','copy:fonts','styles','scripts'),
+parallel('watch','server')))
+
+task('build',
+series(
+  'clean',
+parallel('copy:html','copy:content','copy:video','copy:fonts','styles','scripts')))
