@@ -35,7 +35,7 @@ task ('copy:video', () =>{
 })
 task ('copy:fonts', () =>{
   return src('src/Fonts/*')
-  .pipe(dest('dist/fonts'))
+  .pipe(dest('dist/Fonts'))
   .pipe(reload({ stream: true }));
 })
 
