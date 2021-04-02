@@ -21,7 +21,7 @@
 
 .section-hero{
   color: $white;
-  background: #61C4D9 url(../../../src/img/bg/узор1.png) right bottom no-repeat;
+  background: #61C4D9 url(./img/bg/узор1.png) right bottom no-repeat;
   position: relative;
   height: 100%;
   @include tablets{
@@ -29,7 +29,7 @@
   }
   &:before{
     position: absolute;
-    content: url(../../img/icons/Лист.png);
+    content: url(./img/icons/Лист.png);
     bottom: rem(-40px);
     left: 2%;
     @include tablets{
@@ -190,9 +190,9 @@
 
 .section-form{
   background: 
-  url(../../img/icons/berry-form.png) left 5% bottom 10%  no-repeat,
-  url(../../img/icons/laef-form.png) right 5% bottom 10%  no-repeat,
-  url(../../img/bg/form-bg.png) center center / cover no-repeat;
+  url(./img/icons/berry-form.png) left 5% bottom 10%  no-repeat,
+  url(./img/icons/laef-form.png) right 5% bottom 10%  no-repeat,
+  url(./img/bg/form-bg.png) center center / cover no-repeat;
   color: $darkgreen;
   @include tablets{
     background:url(../img/bg/form-bg.png) center center /cover no-repeat ;
