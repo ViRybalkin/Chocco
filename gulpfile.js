@@ -28,6 +28,17 @@ task ('copy:content', () =>{
   .pipe(dest('dist/img'))
   .pipe(reload({ stream: true }));
 })
+task ('copy:video', () =>{
+  return src('src/video//*')
+  .pipe(dest('dist/video'))
+  .pipe(reload({ stream: true }));
+})
+task ('copy:fonts', () =>{
+  return src('src/fonts//*')
+  .pipe(dest('dist/fonts'))
+  .pipe(reload({ stream: true }));
+})
+
 
 const styles = [
   'node_modules/normalize.css/normalize.css',
@@ -86,5 +97,7 @@ task('server', function() {
 watch('src/scss/**/*.scss', series('styles'));
 watch('src/*.html', series('copy:html'));
 watch('src/*.html', series('copy:content'));
+watch('src/*.html', series('copy:video'));
+watch('src/*.html', series('copy:fonts'));
 watch('src/Js/*.js', series('scripts'));
-task('default',series('clean',parallel('copy:html','copy:content','styles','scripts'),'server'))
+task('default',series('clean',parallel('copy:html','copy:content','copy:video','copy:fonts','styles','scripts'),'server'))
