@@ -2,13 +2,13 @@
   const teamBtn = document.querySelectorAll('.team__name');
   const teamWrap = document.querySelectorAll('.team__wrap')
   const desc = document.querySelectorAll('.team__desc')
-  const triangle = document.querySelectorAll('.team__triangle')
+  // const triangle = document.querySelectorAll('.team__triangle')
 
   function hideAccardion(){
     for(let i = 0; i < teamWrap.length; i++){
       teamWrap[i].style.height = '0px';
       teamWrap[i].classList.remove('active');
-      triangle[i].classList.remove('team__triangle-active')
+      // triangle[i].classList.remove('team__triangle-active')
     }
   };
 
@@ -16,7 +16,7 @@
     let height = getComputedStyle(desc[i]).height;
     teamWrap[i].style.height = height;
     teamWrap[i].classList.add('active');
-    triangle[i].classList.add('team__triangle-active')
+    // triangle[i].classList.add('team__triangle-active')
   };
 
 
@@ -33,3 +33,4 @@
     })
   }
 })();
+
