@@ -49,5 +49,12 @@
     background: rgba(51, 53, 55, 0.9);
     transition: 1s;
   }
-
+}
+.acco-menu-mobile{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
 }

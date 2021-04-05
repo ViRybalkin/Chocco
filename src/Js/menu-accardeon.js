@@ -34,18 +34,23 @@
 // })();
 const itemWidth = item =>{
   let reqItemWidth = 0;
-  const srennWidth = $(window).width();
+  const screenWidth = $(window).width();
   const container = item.closest('.menu-acco__list')
   const linkBlock = container.find('.menu-acco__link')
   const linkWidth = linkBlock.width() * linkBlock.length;
   const textContainer = item.find('.menu-acco__text-container');
   const paddingLeft = parseInt(textContainer.css('padding-left'))
   const paddingRight = parseInt(textContainer.css('padding-right'))
+
   
   if (window.innerWidth < 768 ){
-    reqItemWidth = srennWidth - linkWidth
+    reqItemWidth = screenWidth - linkWidth
   } else {
-    reqItemWidth= 520
+    reqItemWidth = 520
+  }
+  if(window.innerWidth < 480){
+    reqItemWidth = screenWidth - linkBlock.width();
+
   }
   return {
     container : reqItemWidth,
@@ -83,5 +88,8 @@ $('.menu-acco__link').on('click', e =>{
   } else {
     closeItem(container)
     opneItem(item)
+  }
+  if(window.innerWidth < 480){
+    $(item).toggleClass('acco-menu-mobile')
   }
 })
