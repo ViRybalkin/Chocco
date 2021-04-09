@@ -38,6 +38,7 @@
     "node-sass": "^5.0.0"
   },
   "dependencies": {
+    "del": "^6.0.0",
     "jquery": "^3.6.0",
     "jquery-touchswipe": "^1.6.19",
     "mobile-detect": "^1.4.5",

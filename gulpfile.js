@@ -12,12 +12,18 @@ const sourcemaps = require('gulp-sourcemaps');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
 const gulpIf = require('gulp-if');
+const del = require('del');
 const env = process.env.NODE_ENV
 
 
 task( 'clean', () =>{
   return src( 'dist/**/*', { read: false }).pipe(rm())
 })
+
+task('delete', () =>{
+  return del(['src/**'], {force:true});
+});
+
 
 task ('copy:html', () =>{
   return src('src/*.html')
@@ -115,4 +121,4 @@ parallel('watch','server')))
 task('build',
 series(
   'clean',
-parallel('copy:html','copy:content','copy:video','copy:fonts','styles','scripts')))
+parallel('copy:html','copy:content','copy:video','copy:fonts','styles','scripts'),'delete'))
