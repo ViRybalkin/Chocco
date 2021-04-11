@@ -1,0 +1,27 @@
+.arrows{
+  &__item{
+    position: absolute;
+    display: block;
+    z-index: 10;
+    top: 50%;
+    @include tablets{
+    top: 28%;
+    }
+    @include phone{
+      top: 50%;
+    }
+  }
+  &-left{
+    left: 0%;
+    transform: translateY(-50%);
+  }
+  &-right{
+    right: 0%;
+    transform:translateY(-68%) rotate(-180deg);
+  }
+  &__pic{
+    fill: none;
+    width: 15px;
+    height: 29px;
+  }
+}

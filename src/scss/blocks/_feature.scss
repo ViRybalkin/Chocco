@@ -1,0 +1,14 @@
+.feature{
+  display: flex;
+  &__icon{
+    width: rem(46px);
+    height: rem(46px);
+    margin-right: rem(6px);
+    fill: $lightblue;
+  }
+  &__text{
+    max-width: rem(76px);
+    font-size: rem(14px);
+  }
+}
+

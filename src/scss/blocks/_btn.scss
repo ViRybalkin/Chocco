@@ -1,0 +1,42 @@
+@mixin btn{
+  display: inline-block;
+  padding: rem(18px) rem(36px);
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 100px;
+}
+  .btn{
+    @include btn;
+    &_color-white{
+      background-color: $white;
+      color: $darkgreen;
+      transition: .4s;
+      &:hover{
+        color: $white;
+        background:$darkgreen;
+      }
+    }
+    &_color-green{
+      background: $darkgreen;
+      color: $white;
+      transition: 0.4s;
+      &:hover{
+        background: $white;
+        color: $darkgreen;
+      }
+    }
+    &_color-transparent{
+      background: transparent;
+      color: green;
+      transition: 0.4s;
+      font-weight: normal;
+      font-size: rem(14px);
+      &:hover{
+        color: $white;
+      }
+    }
+  }
+
+
+
+
