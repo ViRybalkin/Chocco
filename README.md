@@ -1,6 +1,6 @@
 # Chocco - сайт с батончиками
 
-![preview](https://github.com/ViRybalkin/Chocco/blob/main/Preview.jpg)
+![preview](https://github.com/ViRybalkin/Chocco/blob/master/Preview.jpg)
 
 ### При написании проекта использованы технологии
 
