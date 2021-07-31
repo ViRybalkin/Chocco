@@ -1,0 +1,32 @@
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: $white;
+  padding: rem(20px) 0;
+  z-index: 2;
+}
+
+.footer-contacts{
+  display: flex;
+  justify-content: space-between;
+  .contacts{
+    font-size: rem(18px);
+    &__link{
+      color: $green;
+      @include phone{
+        margin-bottom: rem(18px);
+      }
+    }
+  }
+  @include phone{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
